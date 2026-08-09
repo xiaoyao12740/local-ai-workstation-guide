@@ -1,0 +1,58 @@
+name: Validate tutorial
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Check PowerShell syntax and repository secrets
+        shell: pwsh
+        run: |
+          $parseErrors = @()
+          Get-ChildItem scripts -Filter *.ps1 | ForEach-Object {
+            $tokens = $null
+            $errors = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$tokens, [ref]$errors)
+            $parseErrors += $errors
+          }
+          if ($parseErrors.Count) { $parseErrors; exit 1 }
+          ./scripts/check-secrets.ps1
+
+      - name: Check Bash syntax
+        run: bash -n scripts/check-wsl.sh
+
+      - name: Check Python syntax
+        run: python -m py_compile examples/openai_compatible.py
+
+      - name: Check Docker Compose syntax
+        run: docker compose config --quiet
+
+      - name: Check local Markdown links and images
+        shell: pwsh
+        run: |
+          $missing = @()
+          Get-ChildItem -Recurse -Filter *.md | ForEach-Object {
+            $markdown = $_
+            $body = Get-Content -Raw -LiteralPath $markdown.FullName
+            foreach ($match in [regex]::Matches($body, '!?(?:\[[^\]]*\])\(([^)]+)\)')) {
+              $target = $match.Groups[1].Value.Trim()
+              if ($target -match '^(https?://|mailto:|#)') { continue }
+              $target = $target.Split('#')[0]
+              if ([string]::IsNullOrWhiteSpace($target)) { continue }
+              $decoded = [uri]::UnescapeDataString($target).Trim('<', '>')
+              if (-not (Test-Path -LiteralPath (Join-Path $markdown.DirectoryName $decoded))) {
+                $missing += "$($markdown.FullName) -> $target"
+              }
+            }
+          }
+          if ($missing.Count) { $missing; exit 1 }

@@ -1,0 +1,42 @@
+name: Bug report / 问题报告
+description: Report a reproducible problem in the Windows V0.1 learning path.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先删除日志中的 API Key、Token、Cookie、用户名和私人路径。Never post credentials or private data.
+  - type: textarea
+    id: step
+    attributes:
+      label: Tutorial step / 所在步骤
+      description: Link the README or chapter section where the problem occurred.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / 环境
+      description: Windows version, WSL version, Docker/Ollama versions, RAM and GPU. Do not include serial numbers or account data.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / 预期结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result and sanitized logs / 实际结果与脱敏日志
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Privacy check / 隐私检查
+      options:
+        - label: I removed credentials, cookies, personal paths and unrelated private information.
+          required: true

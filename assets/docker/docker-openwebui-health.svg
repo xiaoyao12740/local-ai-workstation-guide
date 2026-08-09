@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-labelledby="title desc">
+  <title id="title">Docker and Open WebUI health evidence</title>
+  <desc id="desc">Verified runtime summary: Docker client and server 29.4.3, Open WebUI healthy, health endpoint HTTP 200.</desc>
+  <rect width="1000" height="360" rx="20" fill="#0d1117"/>
+  <rect x="30" y="30" width="940" height="300" rx="12" fill="#161b22" stroke="#30363d"/>
+  <text x="55" y="85" fill="#58a6ff" font-family="Arial, sans-serif" font-size="27" font-weight="700">Docker → Open WebUI</text>
+  <text x="55" y="140" fill="#c9d1d9" font-family="Consolas, monospace" font-size="23">Docker Client  29.4.3</text>
+  <text x="55" y="180" fill="#c9d1d9" font-family="Consolas, monospace" font-size="23">Docker Server  29.4.3</text>
+  <text x="55" y="220" fill="#c9d1d9" font-family="Consolas, monospace" font-size="23">open-webui    running / healthy</text>
+  <text x="55" y="260" fill="#3fb950" font-family="Consolas, monospace" font-size="23">GET /health   HTTP 200</text>
+  <text x="720" y="305" fill="#3fb950" font-family="Arial, sans-serif" font-size="18">RUNTIME VERIFIED</text>
+</svg>
