@@ -26,7 +26,7 @@ flowchart LR
     W --> V["open-webui-data Volume"]
 ```
 
-Compose 将宿主的 `127.0.0.1:3000` 映射到容器 `8080`。仅绑定 `127.0.0.1` 可避免默认暴露到局域网或公网。`open-webui-data` 保存账户、设置和聊天数据。
+Compose 默认将宿主的 `127.0.0.1:3000` 映射到容器 `8080`；可在 `.env` 中用 `OPEN_WEBUI_PORT` 改宿主端口。仅绑定 `127.0.0.1` 可避免默认暴露到局域网或公网。Compose 自动管理容器名，项目专属的 `open-webui-data` Volume 保存账户、设置和聊天数据。
 
 ## 启动前检查
 
@@ -98,7 +98,7 @@ Open WebUI 当前文档定义：
 ```powershell
 docker compose images
 docker volume ls
-docker inspect open-webui
+docker inspect $(docker compose ps -q open-webui)
 ```
 
 不要把 Volume 目录、聊天导出或数据库提交到 Git。备份方式应以 Open WebUI 当前官方文档为准，并在副本上验证恢复。

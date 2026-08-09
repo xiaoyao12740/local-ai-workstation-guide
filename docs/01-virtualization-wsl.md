@@ -8,7 +8,7 @@
 
 ## 1. 检查虚拟化
 
-打开任务管理器 → 性能 → CPU，查看“虚拟化”是否为“已启用”。若未启用，重启进入 BIOS/UEFI，寻找 Intel VT-x/VT-d 或 AMD-V/SVM。菜单名称因厂商而异；修改前记录原设置，不要改动不相关的安全和存储选项。
+打开任务管理器 → 性能 → CPU，查看“虚拟化”是否为“已启用”。若未启用，重启进入 BIOS/UEFI，寻找 Intel Virtualization Technology / VT-x 或 AMD SVM / AMD-V。菜单名称因厂商而异；修改前记录原设置，不要改动不相关的安全和存储选项。
 
 ![Windows Task Manager showing virtualization enabled](../assets/wsl/windows-virtualization-enabled.png)
 
@@ -72,4 +72,4 @@ WSL、Windows 和 Docker Desktop 之间并非永远共享同一个 `localhost` �
 
 ## 完成后的状态与下一步
 
-成功现象：`wsl --list --verbose` 能看到 Ubuntu，且 `VERSION` 为 `2`；Ubuntu 能正常执行 `sudo apt update`。完成后进入 [Docker 基础与 WSL 2 后端](03-docker.md)。如果安装命令要求重启，必须重启并重新验收后再继续。
+成功现象：`wsl --list --verbose` 能看到 Ubuntu，且 `VERSION` 为 `2`；Ubuntu 能正常执行 `sudo apt update`。完成后先阅读 [显卡、显存与模型选择](02-gpu-model-selection.md)，再进入 Docker 章节。如果安装命令要求重启，必须重启并重新验收后再继续。

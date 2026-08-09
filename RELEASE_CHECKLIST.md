@@ -92,11 +92,12 @@
 - [ ] 覆盖 8GB RAM 设备的小模型替代路径。
 - [ ] 由一名没有 Linux/Docker 经验的真实读者完成可用性测试。
 
-## 当前环境 WARN / TODO
+## 历史预检记录（已由 Runtime RC 取代）
 
-- Docker CLI 与 Compose 已安装，但核验时 Docker Engine 未运行；按范围冻结要求未主动启动。
-- Ollama CLI 已安装，但核验时本地 Ollama API 未运行；按范围冻结要求未主动启动。
-- 因 Engine 未运行，无法读取 Open WebUI 容器是否存在或停止；`/health` 当前不可达。
+早期只读静态预检曾发现 Docker Engine、Ollama API 与 Open WebUI 未运行。后续 Runtime RC 已启动并逐项验证这些服务，结果全部通过；当前状态以 [RUNTIME_VALIDATION.md](RUNTIME_VALIDATION.md) 为准，早期观察不再是发布警告。
+
+## 当前非阻塞备注
+
 - WSL 只读命令确认 Ubuntu 与 WSL 2 存在；宿主 PATH 中存在一个失效项目，WSL 会输出路径转换警告。该警告不阻塞本教程链路，且测试过程未擅自修改用户 PATH。
 - `wsl --status` 的本地化输出未被脚本确认为“默认版本 2”，但现有 Ubuntu 的 VERSION 2 已独立确认。这是 INFO，不影响现有发行版验收。
 

@@ -1,5 +1,7 @@
 # Local AI Workstation Guide / 本地 AI 工作站搭建指南
 
+**简体中文** | [English summary](README_EN.md)
+
 > Dynamic documentation last reviewed: 2026-08-09. Versions, model names, quotas, endpoints and UI paths must be rechecked against official sources before updates.
 
 <p align="center"><strong>Windows 新手从开启虚拟化，到 WSL 2 + Docker + Ollama + Open WebUI 的可复现基础路线。</strong><br>A Windows-first path from virtualization to a local AI chat workstation with WSL 2, Docker, Ollama, and Open WebUI.</p>
@@ -14,7 +16,7 @@
   <img alt="Ollama" src="https://img.shields.io/badge/Ollama-Local%20Models-111827">
   <img alt="Docker" src="https://img.shields.io/badge/Docker-Isolation-2496ed?logo=docker&logoColor=white">
   <img alt="Open WebUI" src="https://img.shields.io/badge/Open%20WebUI-Chat-7c3aed">
-  <img alt="Docs" src="https://img.shields.io/badge/docs-中文%20%7C%20English-16a34a">
+  <img alt="Docs" src="https://img.shields.io/badge/docs-中文%20%7C%20EN%20summary-16a34a">
 </p>
 
 > [!IMPORTANT]
@@ -69,7 +71,7 @@ Cloud API、Claude Code、Codex 与 CCR 文档已保留为后续增强内容，�
 | 8（Later） | [Claude Code、Codex 与兼容路由](docs/08-claude-code.md) | Optional advanced integration |
 | 9 | [安全、令牌与权限](docs/09-security.md) | Protect credentials and the host |
 | 10 | [故障排查](docs/10-troubleshooting.md) | Diagnose service and network failures |
-| 11 | [Agent 实战](docs/11-agent-lab.md) | Complete a controlled coding task |
+| 11（Later） | [Agent 实战](docs/11-agent-lab.md) | Optional controlled coding task |
 | 12 | [最终验收](docs/12-acceptance.md) | Prove the workstation works end to end |
 
 ## 第一个里程碑：本地 AI 聊天界面 / First Milestone
@@ -136,9 +138,9 @@ Invoke-WebRequest http://127.0.0.1:3000/health
 
 ## 适用范围 / Scope
 
-本教程以 Windows 10/11 + WSL 2 为主线。Linux 用户可以跳过 Windows/WSL 章节，从 Ollama 与 Docker 开始。macOS 的虚拟化、GPU 后端和 Docker 网络行为不同，不作为本仓库主验证平台。
+本教程以 Windows 10/11 + WSL 2 为主线，具体最低 Windows 版本、Build 与 WSL 版本请以当前 [Docker Desktop system requirements](https://docs.docker.com/desktop/setup/install/windows-install/) 为准。Linux 用户可以参考架构概念与 Ollama 章节，但 Linux-native 安装流程尚未作为 V0.1 验证路线。macOS 的虚拟化、GPU 后端和 Docker 网络行为不同，不作为本仓库主验证平台。
 
-This guide targets Windows 10/11 with WSL 2. Linux readers can begin with Ollama and Docker. macOS differs in virtualization, GPU backends, and container networking and is not the primary validation platform.
+This guide targets Windows 10/11 with WSL 2; consult the current Docker Desktop system requirements for exact Windows builds and WSL versions. Linux readers may reuse the architecture concepts and Ollama guidance, but a Linux-native installation is not a validated V0.1 path. macOS is not the primary validation platform.
 
 本项目保留 Ryzen 5 5625U、16GB RAM、无独立显卡轻薄本这一测试环境，是为了证明低配置机器也能学习完整工具链，并不是把它作为本地大模型推理的推荐配置。此类设备应从小型量化模型起步，把重任务交给合法的云 API，形成 Local LLM + Cloud LLM 的混合工作站。
 

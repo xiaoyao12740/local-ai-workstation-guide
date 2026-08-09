@@ -51,7 +51,7 @@ docker compose logs --tail 50 open-webui
 - [ ] 知道聊天数据保存在哪个 Volume。
 - [ ] `down` 后重新 `up -d` 数据仍存在。
 
-## 5. 云 API
+## 5. 云 API（可选；V0.1 不要求）
 
 - [ ] 能解释 API 与网页会员的区别。
 - [ ] 知道 Qwen API 在阿里云百炼开通，使用 DashScope Key。
@@ -60,7 +60,7 @@ docker compose logs --tail 50 open-webui
 - [ ] 服务商控制台中能核对用量和费用。
 - [ ] 没有把 Key 写入代码、日志、截图或 Git。
 
-## 6. Coding Agent
+## 6. Coding Agent（可选；V0.1 不要求）
 
 - [ ] 能解释模型、API、Agent 和工具层。
 - [ ] 知道 Claude Code + Claude 与 Codex + OpenAI 是各自更原生的路线。

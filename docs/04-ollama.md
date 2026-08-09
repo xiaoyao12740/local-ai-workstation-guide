@@ -14,7 +14,7 @@
 
 - 已阅读 [硬件与模型选择](02-gpu-model-selection.md)，知道低配设备应从小模型起步。
 - Windows 系统盘或模型存储盘有足够空间，并能访问 Ollama 官方下载与模型库。
-- 本章主线命令均在 **Windows PowerShell** 运行；WSL Bash 示例只是可选的跨环境 API 验证。
+- 本章 V0.1 主线命令均在 **Windows PowerShell** 运行。
 
 ## Ollama 负责什么
 
@@ -42,7 +42,7 @@ Invoke-RestMethod http://127.0.0.1:11434/api/tags
 
 ## 选择并运行第一个模型
 
-模型名称和标签会更新，请先查 [Ollama Library](https://ollama.com/library)。普通 CPU/核显和 16 GB 内存设备应从 1B–3B 的 Q4 级模型开始验证，不要直接下载几十 GB 的模型。
+模型名称和标签会更新，请先查 [Ollama Library](https://ollama.com/library)。普通 CPU/核显和 16 GB 内存设备应从 1B–4B 的 Q4 级模型开始验证，不要直接下载几十 GB 的模型。
 
 低配置首次验证使用核验日期时约 3.4GB 的 Qwen3.5 4B 标签：
 
@@ -73,13 +73,7 @@ Invoke-RestMethod `
   -Body $body
 ```
 
-WSL Bash：
-
-```bash
-curl http://127.0.0.1:11434/api/generate \
-  -H 'Content-Type: application/json' \
-  -d '{"model":"qwen3.5:4b","prompt":"只回复：本地 API 正常","stream":false}'
-```
+V0.1 不提供“从 WSL Bash 调用 Windows Ollama”的快捷命令。WSL 默认 NAT 网络下，WSL 访问 Windows 服务通常需要 Windows 主机 IP；只有 mirrored networking 等特定配置才可直接使用 `127.0.0.1`。为避免新手为了一个可选测试修改 Ollama 监听地址或防火墙，本章只验证 Windows PowerShell 路线。需要跨环境联网时，请先阅读 [Microsoft WSL networking](https://learn.microsoft.com/windows/wsl/networking)。
 
 ## 模型管理
 

@@ -28,7 +28,14 @@ Write-Host "No installation, deletion, configuration change, or secret-value pri
 $os = Get-CimInstance Win32_OperatingSystem -ErrorAction SilentlyContinue
 if ($os) {
     $supportedName = $os.Caption -match 'Windows 10|Windows 11'
-    Add-Result $(if ($supportedName) { "OK" } else { "WARN" }) "Windows" "$($os.Caption), build $($os.BuildNumber)"
+    $build = [int]$os.BuildNumber
+    $minimumBuild = if ($os.Caption -match 'Windows 11') { 22631 } elseif ($os.Caption -match 'Windows 10') { 19045 } else { [int]::MaxValue }
+    $supportedBuild = $supportedName -and ($build -ge $minimumBuild)
+    $osDetail = "$($os.Caption), build $build"
+    if ($supportedName -and -not $supportedBuild) {
+        $osDetail += "; below the currently documented Docker Desktop baseline build $minimumBuild"
+    }
+    Add-Result $(if ($supportedBuild) { "OK" } else { "WARN" }) "Windows" $osDetail
 } else {
     Add-Result "WARN" "Windows" "Unable to read operating-system information"
 }
@@ -74,12 +81,16 @@ if (Test-CommandAvailable "docker.exe") {
     $compose = Invoke-SafeCommand { docker.exe compose version --short }
     Add-Result $(if ($compose.Success) { "OK" } else { "WARN" }) "Docker Compose" $(if ($compose.Success) { "Version $($compose.Output.Trim())" } else { "Compose plugin did not respond" })
     if ($docker.Success) {
-        $container = Invoke-SafeCommand { docker.exe ps -a --filter 'name=^/open-webui$' --format '{{.Status}}' }
+        $container = Invoke-SafeCommand { docker.exe ps -a --filter 'label=com.docker.compose.service=open-webui' --format '{{.Names}}: {{.Status}}' }
+        if ($container.Success -and [string]::IsNullOrWhiteSpace($container.Output)) {
+            # Compatibility fallback for older/manual deployments that used a fixed container name.
+            $container = Invoke-SafeCommand { docker.exe ps -a --filter 'name=^/open-webui$' --format '{{.Names}}: {{.Status}}' }
+        }
         if (-not $container.Success) {
             Add-Result "WARN" "Open WebUI container" "Docker responded, but the container query failed"
         } elseif ([string]::IsNullOrWhiteSpace($container.Output)) {
             Add-Result "INFO" "Open WebUI container" "Container does not exist yet; chapter 05 creates it"
-        } elseif ($container.Output -match '^Up ') {
+        } elseif ($container.Output -match ': Up ') {
             Add-Result "OK" "Open WebUI container" $container.Output
         } else {
             Add-Result "INFO" "Open WebUI container" "Container exists but is not running: $($container.Output)"

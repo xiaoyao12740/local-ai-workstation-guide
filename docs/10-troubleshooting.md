@@ -86,7 +86,7 @@ docker compose logs --tail 200 open-webui
 Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue
 ```
 
-检查容器是否健康、端口是否映射为 `127.0.0.1:3000:8080`，以及浏览器是否访问了正确协议和端口。
+检查容器是否健康、端口是否映射为默认的 `127.0.0.1:3000:8080`（或 `.env` 中配置的 `OPEN_WEBUI_PORT`），以及浏览器是否访问了正确协议和端口。
 
 ## Open WebUI 看不到 Ollama 模型
 

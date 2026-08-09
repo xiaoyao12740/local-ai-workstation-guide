@@ -6,6 +6,20 @@
 >
 > This is a low-end feasibility test on an existing Windows workstation, not a clean-install test or recommended hardware baseline.
 
+## RC.2 isolated Compose validation / RC.2 隔离 Compose 验证
+
+2026-08-10 使用仓库当前 `docker-compose.yml` 进行了隔离验证：
+
+- Compose project：`local-ai-workstation-rc2`
+- 宿主端口：`127.0.0.1:3001`（通过 `OPEN_WEBUI_PORT=3001`）
+- 容器名由 Compose 自动生成：`local-ai-workstation-rc2-open-webui-1`
+- 独立数据卷：`local-ai-workstation-rc2_open-webui-data`
+- `GET /health`：HTTP 200，`{"status":true}`
+- 容器到 `http://host.docker.internal:11434/api/tags`：HTTP 200，并返回本地 Ollama 模型列表
+- 既有 `open-webui` 容器与 3000 端口在测试期间保持运行且健康
+
+验证结束后只清理上述 RC.2 项目新建的容器、网络和空测试数据卷；既有 Open WebUI、Ollama 模型和用户数据未被改动。
+
 ## Test environment
 
 | Item | Observed value |
