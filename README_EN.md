@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | **English summary**
 
-> Last reviewed: 2026-08-10. Versions, quotas, endpoints, model names, and user-interface paths are dynamic; verify them against official documentation before use.
+> Dynamic documentation last reviewed: 2026-08-10. Versions, quotas, endpoints, model names, and user-interface paths are dynamic; verify them against official documentation before use.
 
 A Windows-first, beginner-friendly guide to building a private AI workstation with WSL 2, Docker Desktop, Ollama, and Open WebUI. The V0.1 path is deliberately small and testable: install the foundations, run one local model, open a browser chat, and verify every service boundary.
 

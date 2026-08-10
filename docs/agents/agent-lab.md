@@ -20,10 +20,10 @@
 powershell -ExecutionPolicy Bypass -File .\scripts\verify-agent-lab.ps1 -Agent codex
 ```
 
-成功现象：测试通过；返回值含 `median`；Git 变更只位于 `src/` 与 `tests/`；没有安装、联网、提交或推送。
+成功现象：Agent 自己编写或修改的测试通过；仓库验证脚本内置、工作区无法修改的 fixed semantic acceptance probe 也通过；Git 变更只位于 `src/` 与 `tests/`；没有安装、联网、提交或推送。固定探针独立验证奇数、偶数、重复值、原有 mean/min/max 与空输入异常，作用类似工程中的 hidden tests。
 
 ## English
 
 The lab asks one agent to add median support and tests in its own disposable copy. Prepare either the `claude` or `codex` workspace, launch the client only there, approve only `src/`, `tests/`, and standard-library test commands, then run the verifier shown above (change the agent name when needed).
 
-Success means all tests pass, `median` exists, all changes are limited to `src/` and `tests/`, and no package, network, commit, or push operation occurred.
+Success requires both the agent-editable tests and a repository-controlled fixed semantic acceptance probe to pass. The hidden-style probe independently checks odd, even, duplicate-value, legacy-statistic, and empty-input behavior. All changes must remain under `src/` and `tests/`, with no package, network, commit, or push operation.

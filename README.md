@@ -2,7 +2,7 @@
 
 **简体中文** | [English summary](README_EN.md)
 
-> Dynamic documentation last reviewed: 2026-08-09. Versions, model names, quotas, endpoints and UI paths must be rechecked against official sources before updates.
+> Dynamic documentation last reviewed: 2026-08-10. Versions, model names, quotas, endpoints and UI paths must be rechecked against official sources before updates.
 
 <p align="center"><strong>Windows 新手从开启虚拟化，到 WSL 2 + Docker + Ollama + Open WebUI 的可复现基础路线。</strong><br>A Windows-first path from virtualization to a local AI chat workstation with WSL 2, Docker, Ollama, and Open WebUI.</p>
 
@@ -29,8 +29,8 @@
 
 - ✅ V0.1 — Local AI：Ollama + Open WebUI（`v0.1.0-rc.2`）
 - ✅ V0.2 — Cloud AI：DeepSeek + 百炼/Qwen + Open WebUI（`v0.2.0-rc.1`）
-- ⬜ V0.3 — Coding Agent：Claude Code + Codex + 安全 Agent Lab
-- ⬜ V0.4 — Advanced Routing：Gateway / CCR + 多 Provider + 可观测性
+- 🚧 V0.3 — Coding Agent：实现与 Codex Runtime 已完成，RC 最终评审中
+- ⬜ V0.4 — Advanced Routing：独立 stacked PR 评审中，尚未发布
 
 详细范围、发布门禁与拆分原则见 [ROADMAP.md](ROADMAP.md)。V0.2–V0.4 是同一仓库的后续版本，不会复制四套教程目录。
 
