@@ -14,13 +14,15 @@ Push-Location $target
 try {
     python -m unittest discover -s tests -p 'test_*.py' -v
     if ($LASTEXITCODE -ne 0) { throw 'Agent Lab tests failed.' }
-    $changed = @(git status --short)
+    Get-ChildItem -Path 'src','tests' -Directory -Filter '__pycache__' -Recurse -ErrorAction SilentlyContinue |
+        Remove-Item -Recurse -Force
+    $changed = @(git status --short | Where-Object { $_ -notmatch '__pycache__|\.pyc$' })
     if (-not $changed) { throw 'No agent changes detected.' }
     $forbidden = @($changed | Where-Object { $_ -notmatch '^.. (src|tests)[\\/]' })
     if ($forbidden) { throw "Out-of-scope changes detected:`n$($forbidden -join "`n")" }
     $source = Get-Content -Raw -LiteralPath 'src\score_stats.py'
     if ($source -notmatch '["'']median["'']') { throw 'Median result was not found.' }
     Write-Host "[OK] $Agent lab tests and scope checks passed."
-    git diff -- src tests
+    git diff -- src tests ':(exclude)**/__pycache__/**' ':(exclude)**/*.pyc'
 }
 finally { Pop-Location }

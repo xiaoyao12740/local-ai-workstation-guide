@@ -24,6 +24,8 @@ foreach ($name in $targets) {
         Remove-Item -LiteralPath $resolvedTarget -Recurse -Force
     }
     Copy-Item -LiteralPath $template -Destination $target -Recurse
+    Get-ChildItem -LiteralPath $target -Directory -Filter '__pycache__' -Recurse -ErrorAction SilentlyContinue |
+        Remove-Item -Recurse -Force
     Push-Location $target
     try {
         git init -q
