@@ -145,6 +145,8 @@ Billing
 
 不要把所有 4xx 都解释成“Key 错了”，也不要把网络失败伪装成认证失败。
 
+DeepSeek 当前官方错误码页明确列出 400、401、402、422、429、500 与 503。本教程代码额外保留 403、404 作为 OpenAI-compatible SDK 的通用防御分类；这不表示 DeepSeek 官方保证一定返回这两个状态。
+
 ## 本章验收
 
 - [ ] 能解释网页产品、API Platform、API Key 与 Model 的区别。

@@ -57,7 +57,7 @@ Result: CLOUD_API_OK
 - `max_tokens=16`，控制第一次验证的输出和成本。
 - Thinking 显式关闭，避免额外延迟、Token 和行为不确定性。
 - SDK `timeout=30`、`max_retries=0`，让第一次验证的失败原因更直接；生产重试策略不在本示例范围。
-- HTTP 状态分为格式、认证、权限、余额、模型、参数、限流与 Provider 故障。
+- DeepSeek 官方列出的 400、401、402、422、429、500、503 分别处理；403、404 仅作为 OpenAI-compatible SDK 通用防御分类，不声明为 DeepSeek 官方保证状态。
 - DNS、TLS、连接和超时独立归为 `[NETWORK]`。
 - 不打印原始错误正文、请求对象、Header、Key、账户或余额。
 
