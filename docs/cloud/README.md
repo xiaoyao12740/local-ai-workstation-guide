@@ -5,12 +5,12 @@
 > **阅读范围 / Reading range:** 第 06 章 + Cloud 专题 / Chapter 06 + Cloud section
 > **前置内容 / Prerequisite:** 建议先完成 V0.1；云端调用会产生额度或费用。 / Complete V0.1 first; cloud calls may consume quota or incur cost.
 
-> Last verified: 2026-08-10
-> Status: V0.2 RC preparation — DeepSeek、百炼/Qwen 与 Open WebUI Runtime PASS
+> Last verified: 2026-08-11
+> Status: `v0.2.0-rc.1` public pre-release — DeepSeek、百炼/Qwen 与 Open WebUI Runtime PASS
 
 本目录承载 V0.2 的详细内容；[06-cloud-api.md](../06-cloud-api.md) 继续作为入口页。V0.2 只讨论通用模型 API 与 Open WebUI Provider，不包含 Coding Agent 或 CCR。
 
-## 计划结构
+## 专题结构
 
 | 文件 | 目标 | 关键验收 |
 | --- | --- | --- |
@@ -21,7 +21,7 @@
 | [api-security.md](api-security.md) | Key 生命周期、最小权限、费用保护与截图规则 | Git/日志/截图中无真实 Key |
 | [troubleshooting.md](troubleshooting.md) | 认证、模型、网络、限流和 Provider UI 故障 | 按层定位，不盲目重装 |
 
-Issue #1–#4 已完成；安全、费用、故障排查与 RC 门禁由 Issue #5–#6 收尾。
+V0.2 Issues #1–#6 均已完成；完整 RC 证据见 [V0.2_VALIDATION.md](../../V0.2_VALIDATION.md)。
 
 ## 已确认的动态边界
 
