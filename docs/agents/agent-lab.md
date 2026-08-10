@@ -27,3 +27,9 @@ powershell -ExecutionPolicy Bypass -File .\scripts\verify-agent-lab.ps1 -Agent c
 The lab asks one agent to add median support and tests in its own disposable copy. Prepare either the `claude` or `codex` workspace, launch the client only there, approve only `src/`, `tests/`, and standard-library test commands, then run the verifier shown above (change the agent name when needed).
 
 Success requires both the agent-editable tests and a repository-controlled fixed semantic acceptance probe to pass. The hidden-style probe independently checks odd, even, duplicate-value, legacy-statistic, and empty-input behavior. All changes must remain under `src/` and `tests/`, with no package, network, commit, or push operation.
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Provider 兼容边界 / Previous: Provider boundaries](provider-compatibility.md) | [课程首页 / Course home](../../README.md) | [下一篇：Agent 故障排查 / Next: Agent troubleshooting →](troubleshooting.md)

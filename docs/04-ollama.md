@@ -114,3 +114,9 @@ Modelfile 可以基于已有模型设置 System Prompt、参数或模板。初�
 ## 完成后的状态
 
 成功现象：`ollama list` 能看到目标模型，命令行生成成功，`/api/generate` 返回响应。做到这里已经拥有可调用的本地模型服务；下一步进入 [Open WebUI](05-openwebui.md) 添加浏览器聊天界面。
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Docker / Previous: Docker](03-docker.md) | [课程首页 / Course home](../README.md) | [下一篇：Open WebUI / Next: Open WebUI →](05-openwebui.md)

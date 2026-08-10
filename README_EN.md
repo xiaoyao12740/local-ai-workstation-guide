@@ -6,6 +6,14 @@
 
 A Windows-first, beginner-friendly guide to building a private AI workstation with WSL 2, Docker Desktop, Ollama, and Open WebUI. The V0.1 path is deliberately small and testable: install the foundations, run one local model, open a browser chat, and verify every service boundary.
 
+## Start here / 从这里开始
+
+This repository is a sequential course, not a loose collection of articles. Begin with Chapter 00 and use the Previous — Course home — Next links at the bottom of every lesson.
+
+[▶ Start Chapter 00: roadmap, terms, and architecture](docs/00-roadmap.md)
+
+The complete route is V0.1 local workstation → V0.2 cloud APIs → V0.3 controlled coding agents → V0.4 Advanced / Experimental routing. Readers who only need local AI may complete Chapters 00–05, then jump to security, troubleshooting, and acceptance in Chapters 09, 10, and 12. Cloud, agent, and routing modules clearly identify their prerequisites and evidence limits.
+
 > **Release-candidate status:** static checks passed, maintainer runtime checks passed, visual review passed, and a clean-Windows beginner test is still pending.
 
 The maintainer test device is a Ryzen 5 5625U laptop with 16 GB RAM and no discrete GPU. It is a low-spec feasibility case, not a recommended high-performance LLM configuration. On such hardware, 1B–4B Q4 models are the sensible starting tier; 7B/8B Q4 models are experiments, not a promise of smooth daily use.

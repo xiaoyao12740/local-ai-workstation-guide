@@ -208,3 +208,9 @@ OpenAI 示例要求显式设置 `MODEL`。原因是模型可用性会随项目�
 ## 完成后的状态
 
 你应能解释四个平台与模型家族的对应关系，安全运行至少一个云 API 示例，并知道为什么“接口兼容”不等于“Agent 完美兼容”。
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Open WebUI / Previous: Open WebUI](05-openwebui.md) | [课程首页 / Course home](../README.md) | [下一篇：V0.2 Cloud 子课程 / Next: Cloud module →](cloud/README.md)

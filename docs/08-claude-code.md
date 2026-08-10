@@ -199,3 +199,9 @@ Coding Plan → Chat/Completions → 仅按百炼当期兼容说明评估旧版 
 ## 完成后的状态
 
 你应能为目标模型选择原生 Agent，区分官方 Gateway 与社区 Router，并使用三层方法验证，而不是把返回文本当作“完美兼容”。
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Agent 故障排查 / Previous: Agent troubleshooting](agents/troubleshooting.md) | [课程首页 / Course home](../README.md) | [下一篇：安全 / Next: Security →](09-security.md)

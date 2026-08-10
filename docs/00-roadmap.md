@@ -46,3 +46,9 @@ Cloud API、Coding Agent 与兼容路由是 V0.1 之后的独立增强路线，�
 ## English checkpoint
 
 Treat the workstation as layered infrastructure. Verify one layer at a time and make every cross-boundary data flow explicit. Installation is not the goal; reproducible health checks are.
+
+---
+
+### 课程导航 / Course navigation
+
+[← 课程首页 / Course home](../README.md) | [下一篇：开启虚拟化与 WSL 2 / Next: Virtualization and WSL 2 →](01-virtualization-wsl.md)

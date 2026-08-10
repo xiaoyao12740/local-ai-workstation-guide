@@ -121,3 +121,8 @@ Agent 读取的 README、Issue、网页、依赖说明和代码注释都可能�
 
 你应能解释 Key 泄露后的正确响应，证明端口只绑定本机，并能审查一次 Agent 的文件、网络和命令权限。
 
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Agent 与兼容路由 / Previous: Agents and compatibility](08-claude-code.md) | [课程首页 / Course home](../README.md) | [下一篇：故障排查 / Next: Troubleshooting →](10-troubleshooting.md)

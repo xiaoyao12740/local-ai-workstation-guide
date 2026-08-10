@@ -15,3 +15,9 @@
 ## English
 
 Diagnose in layers: CLI, credential product, provider reachability, current directory, sandbox write scope, approval, tests, then Git scope. Never reinstall first. For authentication errors, verify key/endpoint pairing without sharing the key. For unavailable models, use current provider discovery. If an agent stalls or edits outside scope, stop it; do not grant whole-drive access.
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：安全 Agent Lab / Previous: Controlled Agent Lab](agent-lab.md) | [课程首页 / Course home](../../README.md) | [下一篇：Agent 与兼容路由总览 / Next: Agents and compatibility →](../08-claude-code.md)

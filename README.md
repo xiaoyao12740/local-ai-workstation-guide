@@ -25,6 +25,23 @@
 > [!NOTE]
 > 本仓库是独立教育项目，与文中提到的服务商不存在官方合作、赞助或背书关系。试用额度、价格与模型可用性会变化，请以各服务商最新页面为准。详见 [免责声明 / Disclaimer](DISCLAIMER.md)。
 
+## 从这里开始 / Start Here
+
+这不是一组需要读者自己拼接的零散文章，而是一门可以顺序完成的 Windows AI 工作站课程。第一次阅读请从第 00 章开始，并使用每页底部的“上一篇—课程首页—下一篇”继续；不要依赖 GitHub 文件名猜测顺序。
+
+> **完整学习路线：** V0.1 本地工作站 → V0.2 云 API → V0.3 受控 Coding Agent → V0.4 Advanced / Experimental Routing。
+
+[▶ 从第 00 章开始：路线、术语与架构](docs/00-roadmap.md)
+
+| 你的目标 | 建议阅读范围 | 完成标志 |
+| --- | --- | --- |
+| 只搭建本地 AI | 第 00–05 章，再阅读 09、10、12 | Ollama + Open WebUI 本地对话通过 |
+| 增加云模型 | 完成本地路线后继续第 06 章及 Cloud 子课程 | DeepSeek 或百炼/Qwen 至少一条合法 API 路线通过 |
+| 学习 Coding Agent | 继续第 07–12 章及 Agent 子课程 | 隔离 Agent Lab、测试和差异审查通过 |
+| 学习社区路由 | 最后阅读第 13 章及 Routing 子课程 | 理解单 Provider Runtime 证据与未测试边界 |
+
+所有人都可以顺序读完整课程；“选做”只表示不是 V0.1 本地工作站的完成条件，不表示章节可以在不了解前置边界时随意跳读。
+
 ## 版本路线 / Version Roadmap
 
 - ✅ V0.1 — Local AI：Ollama + Open WebUI（`v0.1.0-rc.2`）

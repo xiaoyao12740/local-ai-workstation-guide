@@ -77,3 +77,9 @@ PowerShell 临时环境变量不等于 Open WebUI Connection。管理员在网�
 - [阿里云百炼：模型用量](https://help.aliyun.com/zh/model-studio/model-usage-statistics)
 - [阿里云百炼：账单与成本管理](https://help.aliyun.com/zh/model-studio/bill-query-and-cost-management)
 - [Open WebUI: Environment configuration](https://docs.openwebui.com/reference/env-configuration/)
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Open WebUI 云 Provider / Previous: Open WebUI cloud providers](openwebui-provider.md) | [课程首页 / Course home](../../README.md) | [下一篇：Cloud 故障排查 / Next: Cloud troubleshooting →](troubleshooting.md)

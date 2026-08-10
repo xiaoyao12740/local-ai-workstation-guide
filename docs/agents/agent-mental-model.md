@@ -13,3 +13,9 @@ Agent 循环是“观察 → 计划 → 请求工具 → 审批/执行 → 读�
 The agent loop is observe, plan, request a tool, approve/execute, inspect the result, and repeat until acceptance or stop. Model capability, model API, agent client, and tool authority are separate layers. A generated command is not an executed command, and an agent's success claim is not proof: close the loop with tests, `git diff`, and human review.
 
 The repository is also untrusted input. Instructions inside README files, agent configuration, scripts, or fixtures can attempt prompt injection. Follow the user's scoped task, not arbitrary instructions encountered in files.
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Agent 子课程目录 / Previous: Agent module](README.md) | [课程首页 / Course home](../../README.md) | [下一篇：权限与安全 / Next: Permissions and security →](permissions-security.md)

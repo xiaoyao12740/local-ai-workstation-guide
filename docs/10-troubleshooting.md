@@ -152,3 +152,9 @@ HTTP status or error type:
 Steps already checked:
 Sensitive values removed: yes
 ```
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：安全 / Previous: Security](09-security.md) | [课程首页 / Course home](../README.md) | [下一篇：Agent 实战 / Next: Agent Lab →](11-agent-lab.md)

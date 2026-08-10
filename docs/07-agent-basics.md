@@ -23,3 +23,9 @@ flowchart LR
 V0.3 turns V0.2 model calls into a controlled software-agent workflow. The model proposes actions, the agent client translates them into file, shell, test, and Git tools, and the operating system executes them. A model has no inherent computer access; effective authority comes from the workspace, sandbox, network, and approval policy you grant at launch.
 
 Read the [mental model](agents/agent-mental-model.md) and [permission guide](agents/permissions-security.md), choose [Claude Code](agents/claude-code.md) or [Codex](agents/codex.md), then run the [isolated lab](agents/agent-lab.md). CCR is not required for V0.3.
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Cloud 故障排查 / Previous: Cloud troubleshooting](cloud/troubleshooting.md) | [课程首页 / Course home](../README.md) | [下一篇：V0.3 Agent 子课程 / Next: Agent module →](agents/README.md)

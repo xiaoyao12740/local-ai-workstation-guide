@@ -28,3 +28,9 @@ Prepare the `claude` lab with the commands above, launch only inside that direct
 - [Claude Code CLI reference](https://docs.anthropic.com/en/docs/claude-code/cli-usage)
 - [Anthropic LLM gateway configuration](https://docs.anthropic.com/en/docs/claude-code/llm-gateway)
 - [Alibaba Cloud Model Studio third-party coding tools](https://help.aliyun.com/en/model-studio/more-tools)
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：权限与安全 / Previous: Permissions and security](permissions-security.md) | [课程首页 / Course home](../../README.md) | [下一篇：Codex / Next: Codex →](codex.md)

@@ -19,3 +19,9 @@ Least-privilege baseline: open only `.agent-runtime/<agent>`, deny tool-network 
 Provider connectivity is not shell connectivity. An agent may need the model API while its tools remain offline. Never use permission-bypass or “yolo” modes. Stop on unexpected behavior, inspect status/diff/processes, and rotate affected credentials.
 
 The legacy Open WebUI on port 3000 is outside the Agent Lab. Agents must not call it, inspect its database or volume, search its credentials, or modify its container. Its LAN exposure remains independent security maintenance and does not block isolated V0.3/V0.4 RC validation.
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Agent 心智模型 / Previous: Agent mental model](agent-mental-model.md) | [课程首页 / Course home](../../README.md) | [下一篇：Claude Code / Next: Claude Code →](claude-code.md)

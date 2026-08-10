@@ -15,3 +15,9 @@
 ## English
 
 Vendor-official routes are Claude Code → Anthropic Claude and Codex → OpenAI. DeepSeek's Anthropic-compatible Claude Code route is DeepSeek-supported compatibility; Model Studio's Anthropic-compatible Qwen route is Alibaba-supported compatibility. Neither is Anthropic endorsement of a non-Claude model. Claude Code → CCR → a non-Claude model remains Community / Experimental. Codex ChatGPT sign-in and OpenAI API billing are separate, and a third-party Codex provider must support the current Responses path rather than forcing a legacy downgrade.
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Codex / Previous: Codex](codex.md) | [课程首页 / Course home](../../README.md) | [下一篇：安全 Agent Lab / Next: Controlled Agent Lab →](agent-lab.md)

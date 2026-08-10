@@ -83,3 +83,9 @@ HTTP 错误只给脱敏分类。百炼的余额/额度、Workspace、地域与 K
 - [获取 API Key](https://help.aliyun.com/zh/model-studio/get-api-key)
 - [百炼错误码](https://help.aliyun.com/zh/model-studio/error-code)
 - [百炼模型列表](https://help.aliyun.com/zh/model-studio/getting-started/models)
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：DeepSeek / Previous: DeepSeek](deepseek.md) | [课程首页 / Course home](../../README.md) | [下一篇：Open WebUI 云 Provider / Next: Open WebUI cloud providers →](openwebui-provider.md)

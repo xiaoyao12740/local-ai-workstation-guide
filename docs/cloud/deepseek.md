@@ -76,3 +76,9 @@ Remove-Item Env:DEEPSEEK_MODEL -ErrorAction SilentlyContinue
 - [DeepSeek Thinking Mode](https://api-docs.deepseek.com/guides/thinking_mode/)
 - [DeepSeek error codes](https://api-docs.deepseek.com/quick_start/error_codes/)
 - [OpenAI Python SDK error handling](https://github.com/openai/openai-python#handling-errors)
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：API 基础 / Previous: API basics](api-basics.md) | [课程首页 / Course home](../../README.md) | [下一篇：百炼/Qwen / Next: Model Studio and Qwen →](bailian.md)

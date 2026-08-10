@@ -32,3 +32,9 @@ Before publishing runtime screenshots, replace local paths, account details, ses
 - [Codex security](https://developers.openai.com/codex/security)
 - [Codex configuration](https://developers.openai.com/codex/config-reference)
 - [Codex with a ChatGPT plan](https://help.openai.com/en/articles/11369540-codex-and-chatgpt-plan-usage-limits)
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Claude Code / Previous: Claude Code](claude-code.md) | [课程首页 / Course home](../../README.md) | [下一篇：Provider 兼容边界 / Next: Provider boundaries →](provider-compatibility.md)
