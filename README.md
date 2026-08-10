@@ -28,13 +28,13 @@
 ## 版本路线 / Version Roadmap
 
 - ✅ V0.1 — Local AI：Ollama + Open WebUI（`v0.1.0-rc.2`）
-- 🚧 V0.2 — Cloud AI：DeepSeek + 百炼/Qwen + Open WebUI
+- ✅ V0.2 — Cloud AI：DeepSeek + 百炼/Qwen + Open WebUI（`v0.2.0-rc.1`）
 - ⬜ V0.3 — Coding Agent：Claude Code + Codex + 安全 Agent Lab
 - ⬜ V0.4 — Advanced Routing：Gateway / CCR + 多 Provider + 可观测性
 
 详细范围、发布门禁与拆分原则见 [ROADMAP.md](ROADMAP.md)。V0.2–V0.4 是同一仓库的后续版本，不会复制四套教程目录。
 
-## V0.2 Cloud AI — RC preparation
+## V0.2 Cloud AI — `v0.2.0-rc.1`
 
 ![Qwen 3.7 Plus validated through Open WebUI](assets/cloud/openwebui-qwen37-validation.png)
 

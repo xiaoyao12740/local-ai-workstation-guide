@@ -37,9 +37,9 @@ Cloud APIs → Claude Code / Codex → community routing and agent labs
 
 Cloud APIs, coding agents, and Claude Code Router are not required to complete V0.1.
 
-## V0.2 Cloud AI status
+## V0.2 Cloud AI — `v0.2.0-rc.1`
 
-V0.2 has been runtime-validated with DeepSeek and Alibaba Cloud Model Studio/Qwen through an isolated, loopback-only Open WebUI instance.
+The V0.2 release candidate has been runtime-validated with DeepSeek and Alibaba Cloud Model Studio/Qwen through an isolated, loopback-only Open WebUI instance.
 
 ![Qwen 3.7 Plus validated through Open WebUI](assets/cloud/openwebui-qwen37-validation.png)
 
