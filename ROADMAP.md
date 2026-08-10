@@ -2,7 +2,7 @@
 
 > Last verified: 2026-08-10  
 > 当前公开版本：`v0.1.0-rc.2`  
-> 当前开发阶段：V0.2 Planning
+> 当前开发阶段：V0.2 implementation complete; RC review pending
 
 本项目使用一个仓库和连续的 Git Tag / GitHub Release 记录演进，不复制多套版本目录。V0.1 必须始终可以在不申请云 API、不安装 Coding Agent 和 CCR 的情况下独立完成。
 
@@ -25,7 +25,7 @@ Windows → WSL 2 → Docker → Ollama → Open WebUI
 
 ## V0.2 — Cloud AI Workstation
 
-**状态：** 规划中，开发分支 `dev/v0.2-cloud-api`。
+**状态：** 实现与维护者 Runtime 已完成；`dev/v0.2-cloud-api` 正在进行 RC 最终审查。
 
 ```text
 V0.1 → DeepSeek API → Alibaba Cloud Model Studio / Qwen API

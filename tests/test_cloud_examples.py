@@ -70,6 +70,35 @@ class CommonHelpersTest(unittest.TestCase):
                 "https://dashscope.aliyuncs.com/apps/anthropic"
             )
 
+    def test_model_studio_rejects_userinfo(self) -> None:
+        with self.assertRaisesRegex(ConfigurationError, "credentials"):
+            validate_model_studio_base_url(
+                "https://user:pass@dashscope.aliyuncs.com/compatible-mode/v1"
+            )
+
+    def test_model_studio_rejects_custom_port(self) -> None:
+        with self.assertRaisesRegex(ConfigurationError, "port"):
+            validate_model_studio_base_url(
+                "https://dashscope.aliyuncs.com:8443/compatible-mode/v1"
+            )
+
+    def test_model_studio_rejects_query(self) -> None:
+        with self.assertRaisesRegex(ConfigurationError, "query"):
+            validate_model_studio_base_url(
+                "https://dashscope.aliyuncs.com/compatible-mode/v1?debug=true"
+            )
+
+    def test_model_studio_rejects_fragment(self) -> None:
+        with self.assertRaisesRegex(ConfigurationError, "fragment"):
+            validate_model_studio_base_url(
+                "https://dashscope.aliyuncs.com/compatible-mode/v1#token"
+            )
+
+    def test_status_messages_never_echo_simulated_secret(self) -> None:
+        simulated_secret = "SECRET_TEST_VALUE"
+        rendered = " ".join(status_message(code)[1] for code in (400, 401, 402, 403, 404, 422, 429, 500, 503))
+        self.assertNotIn(simulated_secret, rendered)
+
 
 class DeepSeekPreflightTest(unittest.TestCase):
     def test_missing_key_exits_before_dependency_or_network(self) -> None:

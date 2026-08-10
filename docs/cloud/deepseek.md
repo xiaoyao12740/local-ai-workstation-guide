@@ -1,9 +1,9 @@
-# DeepSeek 最小客户端：静态实现
+# DeepSeek 最小客户端：静态与真实调用
 
 > Last verified: 2026-08-10  
-> Runtime status: NOT RUN — 本阶段未使用真实 Key、未发起付费请求
+> Runtime status: PASS — 2026-08-10，`deepseek-v4-flash`，HTTP 200，`CLOUD_API_OK`
 
-本阶段只验证配置、代码结构、Thinking 策略、错误分类与缺 Key 安全退出。真实调用必须在静态审查通过并获得用户明确许可后单独执行。
+静态检查覆盖配置、代码结构、Thinking 策略、错误分类与缺 Key 安全退出；维护者随后以当前 Shell 隐藏输入的 Key 完成一次真实调用。仓库没有记录 Key、余额、账户 ID 或完整响应头。
 
 ## 当前动态事实
 

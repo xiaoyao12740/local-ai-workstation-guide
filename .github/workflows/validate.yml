@@ -15,7 +15,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
 
-      - name: Check PowerShell syntax and repository secrets
+      - name: Check PowerShell syntax, text integrity and repository secrets
         shell: pwsh
         run: |
           $parseErrors = @()
@@ -26,6 +26,7 @@ jobs:
             $parseErrors += $errors
           }
           if ($parseErrors.Count) { $parseErrors; exit 1 }
+          ./scripts/check-text-integrity.ps1
           ./scripts/check-secrets.ps1
 
       - name: Check Bash syntax

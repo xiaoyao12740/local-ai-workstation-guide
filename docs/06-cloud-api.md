@@ -1,7 +1,29 @@
-# 06. 云端模型 API：Claude、GPT、DeepSeek 与 Qwen
+# 06. V0.2 云端模型 API 入口
 
-> Last verified: 2026-08-09  
+> Last verified: 2026-08-10
 > 额度、Endpoint、模型和计划规则属于动态信息，使用前必须复查控制台。
+
+## V0.2 实现状态
+
+| 路线 | 证据等级 |
+| --- | --- |
+| DeepSeek API | Static + Runtime PASS |
+| 阿里云百炼 / Qwen API | Static + Runtime PASS |
+| Open WebUI 同时连接本地与云模型 | Isolated Runtime + Visual PASS |
+| OpenAI API | Documentation only — Runtime NOT TESTED |
+| Anthropic Claude API | Documentation only — Runtime NOT TESTED |
+
+完整教程按下面顺序阅读：
+
+1. [API 基础概念](cloud/api-basics.md)
+2. [DeepSeek 最小客户端](cloud/deepseek.md)
+3. [百炼 / Qwen 最小客户端](cloud/bailian.md)
+4. [Open WebUI 云 Provider](cloud/openwebui-provider.md)
+5. [API Key 安全与费用保护](cloud/api-security.md)
+6. [分层故障排查](cloud/troubleshooting.md)
+7. [V0.2 Runtime Validation](../V0.2_VALIDATION.md)
+
+本页保留跨平台概念和 OpenAI/Claude 的静态边界说明；真实运行证据只覆盖 DeepSeek 与百炼/Qwen。
 
 ## 本章目标
 

@@ -1,7 +1,9 @@
-# 百炼 / Model Studio 最小客户端：静态实现
+# 百炼 / Model Studio 最小客户端：静态与真实调用
 
 > Last verified: 2026-08-10  
-> Runtime status: NOT RUN — 未使用真实百炼 Key、未发起付费请求
+> Runtime status: PASS — 2026-08-10，`qwen3.7-plus`，HTTP 200，`CLOUD_API_OK`
+
+真实调用使用脱敏 Workspace 域名 `<workspace>.cn-beijing.maas.aliyuncs.com`。仓库不记录真实 Workspace ID、API Key、余额或账户 ID。
 
 本章只处理阿里云百炼（Model Studio）**按量付费模型 API**。Coding Plan、Token Plan、Claude Code、Codex 与 Agent 套餐不属于 V0.2 Python 客户端范围。
 

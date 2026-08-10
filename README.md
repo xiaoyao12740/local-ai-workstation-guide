@@ -34,6 +34,19 @@
 
 详细范围、发布门禁与拆分原则见 [ROADMAP.md](ROADMAP.md)。V0.2–V0.4 是同一仓库的后续版本，不会复制四套教程目录。
 
+## V0.2 Cloud AI — RC preparation
+
+![Open WebUI discovers DeepSeek and Qwen cloud models](assets/cloud/openwebui-cloud-model-discovery.png)
+
+V0.2 已在隔离的 `127.0.0.1:3001` Open WebUI 实例中完成 DeepSeek 与阿里云百炼/Qwen 的真实调用、模型发现和双语对话验证。API Key、Workspace ID、余额与账户信息均未进入仓库；Python 临时环境变量与 Open WebUI 持久化 Connection 的安全边界分别说明。
+
+- DeepSeek：Static + Runtime PASS
+- 百炼/Qwen：Static + Runtime PASS
+- Open WebUI Cloud：Isolated Runtime + Visual PASS
+- OpenAI / Claude：Documentation only，Runtime NOT TESTED
+
+从 [V0.2 云 API 入口](docs/06-cloud-api.md) 开始，完整证据见 [V0.2 Validation](V0.2_VALIDATION.md)。模型生成的自我介绍不等于厂商事实，价格、额度和 Model ID 必须以当前官方资料及控制台为准。
+
 ## V0.1 最终成果 / What You Will Build
 
 ![Open WebUI running the local Qwen3.5 4B model with a bilingual response](assets/openwebui/openwebui-qwen35-bilingual-chat.png)

@@ -37,6 +37,20 @@ Cloud APIs → Claude Code / Codex → community routing and agent labs
 
 Cloud APIs, coding agents, and Claude Code Router are not required to complete V0.1.
 
+## V0.2 Cloud AI status
+
+V0.2 has been runtime-validated with DeepSeek and Alibaba Cloud Model Studio/Qwen through an isolated, loopback-only Open WebUI instance.
+
+![Open WebUI discovers DeepSeek and Qwen cloud models](assets/cloud/openwebui-cloud-model-discovery.png)
+
+- DeepSeek client and Open WebUI conversation: runtime PASS
+- Model Studio/Qwen client and Open WebUI conversation: runtime PASS
+- Provider keys, the real Workspace ID, balances, and account details are excluded from repository evidence
+- Open WebUI Connections and its data volume are treated as persistent sensitive assets
+- OpenAI API and Anthropic API remain documentation-only and were **not runtime-tested**
+
+This file remains an English summary, not a complete mirror of every Chinese chapter. Start with the [V0.2 entry page](docs/06-cloud-api.md) and [runtime validation](V0.2_VALIDATION.md).
+
 ## Safety rules
 
 - Use only API credentials you obtained legally and that the provider permits for your intended client.
