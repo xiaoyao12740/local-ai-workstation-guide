@@ -20,7 +20,8 @@ examples/cloud/
 ├── README.md
 ├── requirements.txt
 ├── common.py
-└── deepseek_chat.py
+├── deepseek_chat.py
+└── bailian_chat.py
 ```
 
 实现要求：
@@ -32,6 +33,7 @@ examples/cloud/
 - 400/401/402/403/404/422/429 与 5xx 分层提示；网络异常单独处理。
 - 连通性 Prompt 极短、输出上限为 16 tokens、Thinking 显式关闭。
 - CI 只编译并执行离线测试；真实调用只允许由维护者本机人工执行并写入脱敏 Validation。
+- 百炼客户端额外要求用户配置 `DASHSCOPE_BASE_URL`，并在联网前验证核验日官方域名体系和 OpenAI-compatible 路径。
 
 ## 离线验证
 
@@ -44,4 +46,4 @@ python -m unittest discover -s tests -p "test_*.py" -v
 
 第一条命令应以 `[CONFIG] DEEPSEEK_API_KEY is not set...` 安全退出，不应出现 Traceback 或网络请求。
 
-完整配置与未来真实运行步骤见 [DeepSeek 最小客户端](../../docs/cloud/deepseek.md)。目前不宣称任何云 Provider 已通过真实调用。
+完整配置见 [DeepSeek 最小客户端](../../docs/cloud/deepseek.md) 与 [百炼最小客户端](../../docs/cloud/bailian.md)。DeepSeek Runtime Gate 1 已通过；百炼真实调用仍为 NOT RUN。

@@ -28,6 +28,38 @@ def endpoint_domain(base_url: str) -> str:
     return parsed.hostname
 
 
+def validate_model_studio_base_url(base_url: str) -> str:
+    """Validate current official Model Studio OpenAI-compatible host patterns.
+
+    Last verified: 2026-08-10. This is a credential misdelivery guard, not a
+    substitute for TLS validation or provider authentication.
+    """
+    parsed = urlparse(base_url)
+    hostname = endpoint_domain(base_url)
+    legacy_hosts = {
+        "dashscope.aliyuncs.com",
+        "dashscope-intl.aliyuncs.com",
+        "dashscope-us.aliyuncs.com",
+    }
+    workspace_host = hostname.endswith(".maas.aliyuncs.com") and hostname != "maas.aliyuncs.com"
+    if hostname not in legacy_hosts and not workspace_host:
+        raise ConfigurationError(
+            "DASHSCOPE_BASE_URL is not in the currently documented official Alibaba Cloud "
+            "Model Studio domain family. Copy the API Host from your console."
+        )
+    try:
+        port = parsed.port
+    except ValueError as exc:
+        raise ConfigurationError("DASHSCOPE_BASE_URL contains an invalid port.") from exc
+    if port is not None or parsed.username or parsed.password or parsed.query or parsed.fragment:
+        raise ConfigurationError("DASHSCOPE_BASE_URL must not contain credentials, a port, query, or fragment.")
+    if parsed.path.rstrip("/") != "/compatible-mode/v1":
+        raise ConfigurationError(
+            "DASHSCOPE_BASE_URL must end with /compatible-mode/v1 for this OpenAI-compatible example."
+        )
+    return hostname
+
+
 def status_message(status_code: int) -> tuple[str, str]:
     """Map provider HTTP status to a useful category without echoing response bodies."""
     messages = {
