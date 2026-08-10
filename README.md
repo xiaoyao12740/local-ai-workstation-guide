@@ -53,6 +53,12 @@ v0.1.0-rc.1 → v0.1.0-rc.2 → v0.2.0-rc.1（当前）→ v0.2.0（未来稳定
 
 V0.2 是在 V0.1 基础上的增量升级，包含原有本地工作站路线并增加云 API；不是另一个互不相关的教程。各版本的完整双语说明见 [GitHub Releases](https://github.com/xiaoyao12740/local-ai-workstation-guide/releases)。
 
+## V0.3 Coding Agent / 安全编码代理（评审中）
+
+V0.3 在保留 V0.1 本地工作站与 V0.2 云 API 路线的基础上，增加 Agent 循环、最小权限、审批边界、提示注入防护、Claude Code/Codex 支持分层和无第三方依赖的隔离 Agent Lab。实验只允许在被 Git 忽略的 `.agent-runtime/<agent>` 副本内运行。
+
+V0.3 adds the agent loop, least privilege, approval boundaries, prompt-injection awareness, Claude Code/Codex support layers, and an offline standard-library lab. Start from [V0.3 双语入口 / bilingual entry](docs/07-agent-basics.md). V0.4 CCR routing remains advanced and experimental.
+
 ## V0.2 Cloud AI — `v0.2.0-rc.1`
 
 ![Qwen 3.7 Plus validated through Open WebUI](assets/cloud/openwebui-qwen37-validation.png)

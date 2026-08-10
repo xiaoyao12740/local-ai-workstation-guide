@@ -31,3 +31,11 @@ ccr-data*/
 *.qcow2
 *.sqlite
 *.sqlite3
+.agent-runtime/
+*.sqlite-wal
+*.sqlite-shm
+config.sqlite*
+api-keys*
+request-logs*
+usage*.json
+*routing-export*

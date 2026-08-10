@@ -56,6 +56,12 @@ v0.1.0-rc.1 → v0.1.0-rc.2 → v0.2.0-rc.1 (current) → v0.2.0 (future stable)
 
 V0.2 is an incremental upgrade over V0.1: it retains the local-workstation path and adds cloud APIs. It is not an unrelated replacement tutorial. See the complete bilingual notes under [GitHub Releases](https://github.com/xiaoyao12740/local-ai-workstation-guide/releases).
 
+## V0.3 Coding Agent — under review
+
+V0.3 adds an isolated, auditable coding-agent workflow without changing the V0.1 or V0.2 completion paths. It teaches the agent loop, least privilege, approval boundaries, prompt-injection awareness, Claude Code/Codex support layers, and a standard-library Agent Lab.
+
+Runtime work happens only in ignored `.agent-runtime/<agent>` copies. Start with the [bilingual V0.3 entry](docs/07-agent-basics.md). V0.4 community routing remains advanced and experimental.
+
 ## V0.2 Cloud AI — `v0.2.0-rc.1`
 
 The V0.2 release candidate has been runtime-validated with DeepSeek and Alibaba Cloud Model Studio/Qwen through an isolated, loopback-only Open WebUI instance.
