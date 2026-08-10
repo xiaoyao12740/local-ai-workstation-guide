@@ -112,4 +112,4 @@ git diff --cached
 
 ### 课程导航 / Course navigation
 
-[← 上一篇：Agent 实战 / Previous: Agent Lab](11-agent-lab.md) | [课程首页 / Course home — 完成 V0.1–V0.3 路线](../README.md)
+[← 上一篇：Agent 实战 / Previous: Agent Lab](11-agent-lab.md) | [课程首页 / Course home](../README.md) | [下一篇：V0.4 Advanced Routing / Next: Advanced routing →](13-routing.md)

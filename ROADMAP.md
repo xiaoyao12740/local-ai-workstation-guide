@@ -2,7 +2,7 @@
 
 > Last verified: 2026-08-10  
 > 当前公开版本：`v0.2.0-rc.1`
-> 当前开发阶段：V0.3 实现完成、Codex Runtime PASS，等待 RC 最终评审；V0.4 在独立 stacked PR 中评审
+> 当前开发阶段：V0.3 实现完成、Codex Runtime PASS；V0.4 单 Provider Runtime PASS，独立 stacked PR 最终评审中
 
 本项目使用一个仓库和连续的 Git Tag / GitHub Release 记录演进，不复制多套版本目录。V0.1 必须始终可以在不申请云 API、不安装 Coding Agent 和 CCR 的情况下独立完成。
 
@@ -69,7 +69,7 @@ V0.2 → Claude Code → Codex → Permission Boundary → Agent Lab
 
 ## V0.4 — Multi-Provider Agent Workstation
 
-**状态：** 独立 stacked PR 评审中；定位为 Advanced / Experimental，尚未发布。
+**状态：** Claude Code → CCR → DeepSeek 单 Provider Runtime PASS，独立 stacked PR 最终评审中；定位为 Advanced / Experimental，尚未发布。Codex 仅静态 Responses 兼容 PASS，多 Provider 切换 Runtime 未测试。
 
 ```text
 Providers → Gateway / CCR → Routing → Agents → Observability

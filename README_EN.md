@@ -70,6 +70,8 @@ V0.3 adds an isolated, auditable coding-agent workflow without changing the V0.1
 
 Runtime work happens only in ignored `.agent-runtime/<agent>` copies. Start with the [bilingual V0.3 entry](docs/07-agent-basics.md). V0.4 community routing remains advanced and experimental.
 
+V0.4 currently proves one loopback route only: **Claude Code → CCR → DeepSeek**. Codex passed static Responses configuration inspection, but Codex-through-CCR runtime and multi-provider switching were not tested. The stacked V0.4 PR remains under final review; it is not merged, tagged, or released.
+
 ## V0.2 Cloud AI — `v0.2.0-rc.1`
 
 The V0.2 release candidate has been runtime-validated with DeepSeek and Alibaba Cloud Model Studio/Qwen through an isolated, loopback-only Open WebUI instance.

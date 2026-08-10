@@ -47,9 +47,13 @@
 - ✅ V0.1 — Local AI：Ollama + Open WebUI（`v0.1.0-rc.2`）
 - ✅ V0.2 — Cloud AI：DeepSeek + 百炼/Qwen + Open WebUI（`v0.2.0-rc.1`）
 - 🚧 V0.3 — Coding Agent：实现与 Codex Runtime 已完成，RC 最终评审中
-- ⬜ V0.4 — Advanced Routing：独立 stacked PR 评审中，尚未发布
+- 🚧 V0.4 — Advanced Routing：Claude Code → CCR → DeepSeek 单 Provider Runtime PASS，独立 stacked PR 最终评审中
 
 详细范围、发布门禁与拆分原则见 [ROADMAP.md](ROADMAP.md)。V0.2–V0.4 是同一仓库的后续版本，不会复制四套教程目录。
+
+V0.4 当前只证明 **Claude Code → CCR → DeepSeek** 的 loopback 单 Provider 路线；Codex 仅完成 Responses 静态兼容检查，多 Provider 切换 Runtime 未测试。它仍是 Advanced / Experimental，未 Merge、未 Tag、未 Release。
+
+![V0.4 CCR 单 Provider Runtime：认证清理后的请求全部返回 HTTP 200](assets/routing/ccr-auth-clean-runtime-log.png)
 
 ### 如何理解 RC 版本 / Understanding RC versions
 
@@ -137,6 +141,7 @@ Cloud API、Claude Code、Codex 与 CCR 文档已保留为后续增强内容，�
 | 10 | [故障排查](docs/10-troubleshooting.md) | Diagnose service and network failures |
 | 11（Later） | [Agent 实战](docs/11-agent-lab.md) | Optional controlled coding task |
 | 12 | [最终验收](docs/12-acceptance.md) | Prove the workstation works end to end |
+| 13（Advanced / Experimental） | [CCR、Gateway 与路由](docs/13-routing.md) | Understand the validated single-provider route and untested boundaries |
 
 ## 第一个里程碑：本地 AI 聊天界面 / First Milestone
 
