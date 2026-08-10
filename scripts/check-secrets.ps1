@@ -15,7 +15,11 @@ $forbiddenExtensions = @(
 )
 
 $files = Get-ChildItem -LiteralPath $root -Recurse -File |
-    Where-Object { $_.FullName -notmatch "[\\/]\.git[\\/]" }
+    Where-Object {
+        $_.FullName -notmatch "[\\/]\.git[\\/]" -and
+        $_.FullName -notmatch "[\\/]\.venv[\\/]" -and
+        $_.FullName -notmatch "[\\/]__pycache__[\\/]"
+    }
 
 $findings = @()
 foreach ($file in $files) {
