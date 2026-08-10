@@ -41,7 +41,7 @@ Cloud APIs, coding agents, and Claude Code Router are not required to complete V
 
 V0.2 has been runtime-validated with DeepSeek and Alibaba Cloud Model Studio/Qwen through an isolated, loopback-only Open WebUI instance.
 
-![Open WebUI discovers DeepSeek and Qwen cloud models](assets/cloud/openwebui-cloud-model-discovery.png)
+![Qwen 3.7 Plus validated through Open WebUI](assets/cloud/openwebui-qwen37-validation.png)
 
 - DeepSeek client and Open WebUI conversation: runtime PASS
 - Model Studio/Qwen client and Open WebUI conversation: runtime PASS

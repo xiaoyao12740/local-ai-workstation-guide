@@ -66,7 +66,7 @@ Remove-Item Env:DASHSCOPE_MODEL -ErrorAction SilentlyContinue
 
 应返回 `[CONFIG] DASHSCOPE_API_KEY is not set...`，不应出现 Traceback 或网络请求。
 
-## 未来真实调用的固定边界
+## 本次真实调用采用的边界
 
 - Prompt：`Reply exactly with: CLOUD_API_OK`
 - Non-stream

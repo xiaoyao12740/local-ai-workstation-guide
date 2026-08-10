@@ -7,13 +7,17 @@ V0.2 的目标是在同一个 Open WebUI 中同时使用本地 Ollama、DeepSeek
 
 ## Runtime 前置门
 
-添加任何云 Key 前必须全部满足：
+### Runtime verified
 
 - [x] 本次 V0.2 隔离实例的宿主端口只绑定 `127.0.0.1:3001`，不是 `0.0.0.0` 或 `::`。
-- [x] `WEBUI_AUTH=true` 已由 Compose 验证；强且唯一的本地管理员密码属于 **USER RESPONSIBILITY**。
-- [ ] 不在公共网络、端口转发、反向代理或公网隧道中暴露此实例。
-- [ ] 知道 `open-webui-data` Volume 包含账户、聊天和持久配置，应作为敏感数据备份。
-- [ ] 不会把数据库、Volume 导出、管理员页面或 Connection 页面截图提交到 Git。
+- [x] Compose 明确设置 `WEBUI_AUTH=true`。
+
+### User responsibilities / security requirements
+
+- 使用强且唯一的本地管理员密码。
+- 不在公共网络、端口转发、反向代理或公网隧道中暴露此实例。
+- 将包含账户、聊天和持久配置的 Open WebUI Volume、数据库与完整备份视为敏感资产。
+- 不把数据库、Volume 导出、管理员页面或 Connection 页面截图提交到 Git。
 
 只读检查：
 
@@ -98,25 +102,20 @@ Connection saved
 
 隔离实例已经完成以下浏览器端验证：
 
-- Open WebUI 能自动发现 DeepSeek 与百炼/Qwen 的云模型。
+- Open WebUI 能发现并选择 DeepSeek 与百炼/Qwen 的云模型。
 - `deepseek-v4-flash` 完成一次中英文双语对话。
-- `qwen3.8-max` 完成一次中英文双语对话。
+- `qwen3.7-plus` 对精确输出提示返回 `CLOUD_API_OK`。
 - 截图不包含 API Key、邮箱、Workspace ID 或 Connection 设置页。
-
-![Open WebUI 云模型发现](../../assets/cloud/openwebui-cloud-model-discovery.png)
 
 | DeepSeek | Qwen |
 | --- | --- |
-| ![DeepSeek 在 Open WebUI 中完成双语对话](../../assets/cloud/openwebui-deepseek-bilingual-chat-1.png) | ![Qwen 在 Open WebUI 中完成双语对话](../../assets/cloud/openwebui-qwen-bilingual-chat-1.png) |
-| ![DeepSeek 双语回答续页](../../assets/cloud/openwebui-deepseek-bilingual-chat-2.png) | ![Qwen 双语回答续页](../../assets/cloud/openwebui-qwen-bilingual-chat-2.png) |
+| ![DeepSeek 在 Open WebUI 中完成双语对话](../../assets/cloud/openwebui-deepseek-bilingual-chat-1.png) | ![Qwen 3.7 Plus 在 Open WebUI 中返回精确验证结果](../../assets/cloud/openwebui-qwen37-validation.png) |
 
 > 截图里的模型自我介绍仅是生成内容，不是厂商承诺。例如“完全免费”“没有使用限制”、知识截止日期和功能范围都可能不准确，必须以 Provider 控制台、官方文档和真实测试为准。
 
 ### Qwen Model ID 证据口径
 
-Python 客户端的按量实测模型是 `qwen3.7-plus`；Open WebUI 模型选择器显示并完成对话的 ID 是 `qwen3.8-max`。两条证据分别记录，不把聊天正文中的“自我介绍”当作 Model ID。
-
-截至 2026-08-10，百炼官方模型目录明确列出按量 OpenAI-compatible 的 `qwen3.8-max`。另有 Token Plan 文档中的 `qwen3.8-max-preview`，它们不是同一个 ID。本次证据没有写成 `qwen3.8-max-preview`，也不把 Token Plan 规则混入 V0.2 普通 API 教程。
+Python 客户端与 Open WebUI 均使用百炼普通按量 Workspace API 的 `qwen3.7-plus`。模型选择器、提示词和 `CLOUD_API_OK` 返回值同屏，Model ID 不依赖聊天正文中的自我介绍推断。
 
 ## 禁用、删除与轮换
 

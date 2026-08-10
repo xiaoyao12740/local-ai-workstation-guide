@@ -36,7 +36,7 @@
 
 ## V0.2 Cloud AI — RC preparation
 
-![Open WebUI discovers DeepSeek and Qwen cloud models](assets/cloud/openwebui-cloud-model-discovery.png)
+![Qwen 3.7 Plus validated through Open WebUI](assets/cloud/openwebui-qwen37-validation.png)
 
 V0.2 已在隔离的 `127.0.0.1:3001` Open WebUI 实例中完成 DeepSeek 与阿里云百炼/Qwen 的真实调用、模型发现和双语对话验证。API Key、Workspace ID、余额与账户信息均未进入仓库；Python 临时环境变量与 Open WebUI 持久化 Connection 的安全边界分别说明。
 
