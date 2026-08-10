@@ -34,6 +34,25 @@
 
 详细范围、发布门禁与拆分原则见 [ROADMAP.md](ROADMAP.md)。V0.2–V0.4 是同一仓库的后续版本，不会复制四套教程目录。
 
+### 如何理解 RC 版本 / Understanding RC versions
+
+版本格式为 `v主版本.次版本.修订版本-rc.候选序号`，即 `vMAJOR.MINOR.PATCH-rc.N`。
+
+| 版本 | 关系与含义 |
+| --- | --- |
+| `v0.1.0-rc.1` | V0.1 本地工作站的第一个公开候选版 |
+| `v0.1.0-rc.2` | 仍属于 V0.1，是对 `rc.1` 的修正与完善 |
+| `v0.2.0-rc.1` | 进入新的 V0.2 Cloud AI 功能线，因此候选序号重新从 1 开始；这是当前版本 |
+| `v0.2.0` | 将来的 V0.2 正式稳定版，目前尚未发布 |
+
+`v0.2.0-rc.1` 比 `v0.1.0-rc.2` 新：先比较基础版本 `0.2.0 > 0.1.0`，再看同一基础版本内部的 RC 序号。不能脱离基础版本，只拿 `rc.1` 和 `rc.2` 判断新旧。
+
+```text
+v0.1.0-rc.1 → v0.1.0-rc.2 → v0.2.0-rc.1（当前）→ v0.2.0（未来稳定版）
+```
+
+V0.2 是在 V0.1 基础上的增量升级，包含原有本地工作站路线并增加云 API；不是另一个互不相关的教程。各版本的完整双语说明见 [GitHub Releases](https://github.com/xiaoyao12740/local-ai-workstation-guide/releases)。
+
 ## V0.2 Cloud AI — `v0.2.0-rc.1`
 
 ![Qwen 3.7 Plus validated through Open WebUI](assets/cloud/openwebui-qwen37-validation.png)

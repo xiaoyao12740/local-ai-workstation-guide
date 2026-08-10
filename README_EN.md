@@ -37,6 +37,25 @@ Cloud APIs → Claude Code / Codex → community routing and agent labs
 
 Cloud APIs, coding agents, and Claude Code Router are not required to complete V0.1.
 
+## Understanding RC versions
+
+Versions follow `vMAJOR.MINOR.PATCH-rc.N`.
+
+| Version | Relationship and meaning |
+| --- | --- |
+| `v0.1.0-rc.1` | First public candidate for the V0.1 local workstation |
+| `v0.1.0-rc.2` | A corrected and improved candidate on the same V0.1 line |
+| `v0.2.0-rc.1` | First candidate on the new V0.2 Cloud AI line, so the RC counter starts again at 1; this is the current release |
+| `v0.2.0` | Future stable V0.2 release; not published yet |
+
+`v0.2.0-rc.1` is newer than `v0.1.0-rc.2`. Compare the base version first (`0.2.0 > 0.1.0`), then compare RC numbers only within the same base version. An isolated `rc.1` or `rc.2` does not determine which release is newer.
+
+```text
+v0.1.0-rc.1 → v0.1.0-rc.2 → v0.2.0-rc.1 (current) → v0.2.0 (future stable)
+```
+
+V0.2 is an incremental upgrade over V0.1: it retains the local-workstation path and adds cloud APIs. It is not an unrelated replacement tutorial. See the complete bilingual notes under [GitHub Releases](https://github.com/xiaoyao12740/local-ai-workstation-guide/releases).
+
 ## V0.2 Cloud AI — `v0.2.0-rc.1`
 
 The V0.2 release candidate has been runtime-validated with DeepSeek and Alibaba Cloud Model Studio/Qwen through an isolated, loopback-only Open WebUI instance.

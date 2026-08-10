@@ -6,6 +6,21 @@
 
 本项目使用一个仓库和连续的 Git Tag / GitHub Release 记录演进，不复制多套版本目录。V0.1 必须始终可以在不申请云 API、不安装 Coding Agent 和 CCR 的情况下独立完成。
 
+## 版本号与 RC 的关系 / Versioning
+
+本项目采用 `vMAJOR.MINOR.PATCH-rc.N`。基础版本决定功能阶段，`rc.N` 只表示该基础版本发布前的第 N 个候选版：
+
+```text
+v0.1.0-rc.1 → v0.1.0-rc.2 → v0.2.0-rc.1 → v0.2.0
+```
+
+- `v0.1.0-rc.1` 与 `v0.1.0-rc.2` 都属于 V0.1；后者是同一功能线的第二次候选。
+- V0.2 增加 Cloud AI 工作流，基础版本升级为 `0.2.0`，因此 RC 计数重新从 `rc.1` 开始。
+- `v0.2.0-rc.1` 比 `v0.1.0-rc.2` 新，因为 `0.2.0 > 0.1.0`。
+- RC 是发布候选版，不等于稳定版；正式 V0.2 将使用不带后缀的 `v0.2.0`。
+
+English: the base version identifies the feature line; the RC counter restarts for each new base version and is compared only within that line.
+
 ```mermaid
 flowchart LR
     V1["V0.1 Local AI"] --> V2["V0.2 Cloud AI"]
