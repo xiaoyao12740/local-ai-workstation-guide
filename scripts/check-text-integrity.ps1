@@ -9,7 +9,7 @@ $checked = 0
 
 Get-ChildItem -LiteralPath $root -Recurse -File | Where-Object {
     $extensions -contains $_.Extension.ToLowerInvariant() -and
-    $_.FullName -notmatch '[\\/](\.git|\.venv|__pycache__)[\\/]'
+    $_.FullName -notmatch '[\\/](\.git|\.venv|\.agent-runtime|node_modules|__pycache__)[\\/]'
 } | ForEach-Object {
     $checked++
     $lineNumber = 0

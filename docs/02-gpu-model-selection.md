@@ -134,3 +134,9 @@ Docker / Open WebUI / Agent：统一工程体验
 ## 完成后的状态
 
 你应能为自己的设备选择“推荐/可尝试/不建议”层级，解释模型文件与运行内存的区别，并通过 `ollama ps` 确认真实处理器分配。
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：虚拟化与 WSL 2 / Previous: Virtualization](01-virtualization-wsl.md) | [课程首页 / Course home](../README.md) | [下一篇：Docker / Next: Docker →](03-docker.md)

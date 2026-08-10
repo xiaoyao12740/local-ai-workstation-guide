@@ -2,9 +2,17 @@
 
 [简体中文](README.md) | **English summary**
 
-> Last reviewed: 2026-08-10. Versions, quotas, endpoints, model names, and user-interface paths are dynamic; verify them against official documentation before use.
+> Dynamic documentation last reviewed: 2026-08-10. Versions, quotas, endpoints, model names, and user-interface paths are dynamic; verify them against official documentation before use.
 
 A Windows-first, beginner-friendly guide to building a private AI workstation with WSL 2, Docker Desktop, Ollama, and Open WebUI. The V0.1 path is deliberately small and testable: install the foundations, run one local model, open a browser chat, and verify every service boundary.
+
+## Start here / 从这里开始
+
+This repository is a sequential course, not a loose collection of articles. Begin with Chapter 00 and use the Previous — Course home — Next links at the bottom of every lesson.
+
+[▶ Start Chapter 00: roadmap, terms, and architecture](docs/00-roadmap.md)
+
+The complete route is V0.1 local workstation → V0.2 cloud APIs → V0.3 controlled coding agents → V0.4 Advanced / Experimental routing. Readers who only need local AI may complete Chapters 00–05, then jump to security, troubleshooting, and acceptance in Chapters 09, 10, and 12. Cloud, agent, and routing modules clearly identify their prerequisites and evidence limits.
 
 > **Release-candidate status:** static checks passed, maintainer runtime checks passed, visual review passed, and a clean-Windows beginner test is still pending.
 
@@ -55,6 +63,12 @@ v0.1.0-rc.1 → v0.1.0-rc.2 → v0.2.0-rc.1 (current) → v0.2.0 (future stable)
 ```
 
 V0.2 is an incremental upgrade over V0.1: it retains the local-workstation path and adds cloud APIs. It is not an unrelated replacement tutorial. See the complete bilingual notes under [GitHub Releases](https://github.com/xiaoyao12740/local-ai-workstation-guide/releases).
+
+## V0.3 Coding Agent — under review
+
+V0.3 adds an isolated, auditable coding-agent workflow without changing the V0.1 or V0.2 completion paths. It teaches the agent loop, least privilege, approval boundaries, prompt-injection awareness, Claude Code/Codex support layers, and a standard-library Agent Lab.
+
+Runtime work happens only in ignored `.agent-runtime/<agent>` copies. Start with the [bilingual V0.3 entry](docs/07-agent-basics.md). V0.4 community routing remains advanced and experimental.
 
 ## V0.2 Cloud AI — `v0.2.0-rc.1`
 

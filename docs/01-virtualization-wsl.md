@@ -73,3 +73,9 @@ WSL、Windows 和 Docker Desktop 之间并非永远共享同一个 `localhost` �
 ## 完成后的状态与下一步
 
 成功现象：`wsl --list --verbose` 能看到 Ubuntu，且 `VERSION` 为 `2`；Ubuntu 能正常执行 `sudo apt update`。完成后先阅读 [显卡、显存与模型选择](02-gpu-model-selection.md)，再进入 Docker 章节。如果安装命令要求重启，必须重启并重新验收后再继续。
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：路线与架构 / Previous: Roadmap](00-roadmap.md) | [课程首页 / Course home](../README.md) | [下一篇：硬件与模型选择 / Next: Hardware and models →](02-gpu-model-selection.md)

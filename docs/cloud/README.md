@@ -53,3 +53,9 @@ Issue #1–#4 已完成；安全、费用、故障排查与 RC 门禁由 Issue #
 - 账户余额、订单号、用户 ID 或控制台私人截图
 - 未经实测的成功结论
 - 将某个活动额度称为“永久免费”
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：V0.2 云 API 总览 / Previous: Cloud overview](../06-cloud-api.md) | [课程首页 / Course home](../../README.md) | [下一篇：API 基础 / Next: API basics →](api-basics.md)

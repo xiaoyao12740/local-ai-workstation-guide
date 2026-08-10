@@ -67,3 +67,9 @@ http://host.docker.internal:11434
 - [阿里云百炼：模型用量](https://help.aliyun.com/zh/model-studio/model-usage-statistics)
 - [阿里云百炼：新人免费额度与计费 FAQ](https://help.aliyun.com/zh/model-studio/new-free-quota)
 - [Open WebUI: OpenAI-compatible Provider](https://docs.openwebui.com/getting-started/quick-start/connect-a-provider/starting-with-openai-compatible/)
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：API 安全与费用 / Previous: API safety and cost](api-security.md) | [课程首页 / Course home](../../README.md) | [下一篇：V0.3 Coding Agent / Next: Coding agents →](../07-agent-basics.md)

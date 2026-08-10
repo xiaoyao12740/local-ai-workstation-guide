@@ -2,7 +2,7 @@
 
 > Last verified: 2026-08-10  
 > 当前公开版本：`v0.2.0-rc.1`
-> 当前开发阶段：V0.2 RC；V0.3 Runtime 开始前须先完成 Issue #9
+> 当前开发阶段：V0.3 实现完成、Codex Runtime PASS，等待 RC 最终评审；V0.4 在独立 stacked PR 中评审
 
 本项目使用一个仓库和连续的 Git Tag / GitHub Release 记录演进，不复制多套版本目录。V0.1 必须始终可以在不申请云 API、不安装 Coding Agent 和 CCR 的情况下独立完成。
 
@@ -59,7 +59,7 @@ V0.1 → DeepSeek API → Alibaba Cloud Model Studio / Qwen API
 
 ## V0.3 — Coding Agent Workstation
 
-**状态：** 未开始；V0.2 发布后重新核验官方资料。
+**状态：** 实现完成、Codex Runtime PASS，等待 RC 最终评审；尚未 Merge、Tag 或 Release。
 
 ```text
 V0.2 → Claude Code → Codex → Permission Boundary → Agent Lab
@@ -69,13 +69,15 @@ V0.2 → Claude Code → Codex → Permission Boundary → Agent Lab
 
 ## V0.4 — Multi-Provider Agent Workstation
 
-**状态：** 未开始；定位为 Advanced / Experimental。
+**状态：** 独立 stacked PR 评审中；定位为 Advanced / Experimental，尚未发布。
 
 ```text
 Providers → Gateway / CCR → Routing → Agents → Observability
 ```
 
 覆盖 Provider、Credential、Client Key、Management Token、Protocol、Model Mapping、日志、备份与凭据隔离。必须区分 Anthropic 官方支持、Provider 官方兼容与社区 Router。版本、Schema 和命令在开发时重新核验，不提前固化。
+
+Issue #9（旧 Open WebUI `:3000`）属于独立安全维护，不参与 V0.3 Agent Lab 或 V0.4 CCR Runtime 数据路径，因此不阻塞隔离 RC 验证；它仍保持开放，等待单独的备份、迁移和回滚计划。
 
 ## 每个版本的发布门禁
 

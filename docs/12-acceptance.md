@@ -107,3 +107,9 @@ git diff --cached
 ## 合格标准
 
 所有必需项都有命令输出或人工检查证据；任何依赖试用额度、社区路由或特定版本的内容都明确标注，不用“安装过”“应该可以”代替验证。
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Agent 实战 / Previous: Agent Lab](11-agent-lab.md) | [课程首页 / Course home — 完成 V0.1–V0.3 路线](../README.md)

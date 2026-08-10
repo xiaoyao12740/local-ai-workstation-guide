@@ -138,3 +138,9 @@ Invoke-WebRequest http://localhost:3000/health
 ## 完成后的状态
 
 成功现象：浏览器能够登录 Open WebUI，看到 Ollama 模型并完成一次对话；`docker compose down` 后再次 `up -d`，本地账户与聊天仍由同一 Volume 保存。至此 V0.1 基础 AI 工作站完成；[云 API](06-cloud-api.md)、[Coding Agent](07-agent-basics.md) 和 CCR 都是后续选做增强。
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Ollama / Previous: Ollama](04-ollama.md) | [课程首页 / Course home](../README.md) | [下一篇：V0.2 云 API / Next: Cloud APIs →](06-cloud-api.md)

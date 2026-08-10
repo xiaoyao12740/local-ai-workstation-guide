@@ -117,3 +117,9 @@ docker compose down
 ## 完成后的状态
 
 成功现象：`docker info` 同时显示可用 Server 信息，`docker run --rm hello-world` 输出成功消息，并且你能解释为什么容器内的 `localhost` 不是 Windows 宿主机。下一步进入 [Ollama 本地模型服务](04-ollama.md)。
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：硬件与模型选择 / Previous: Hardware and models](02-gpu-model-selection.md) | [课程首页 / Course home](../README.md) | [下一篇：Ollama / Next: Ollama →](04-ollama.md)

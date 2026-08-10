@@ -116,3 +116,8 @@ git commit -m "feat: complete hello-agent exercise"
 
 你完成了一个真实但低风险的 Agent 循环，并亲自检查了文件、命令、测试、差异和 Git 提交。
 
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：故障排查 / Previous: Troubleshooting](10-troubleshooting.md) | [课程首页 / Course home](../README.md) | [下一篇：最终验收 / Next: Acceptance →](12-acceptance.md)

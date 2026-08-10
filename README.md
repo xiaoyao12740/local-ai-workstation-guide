@@ -2,7 +2,7 @@
 
 **简体中文** | [English summary](README_EN.md)
 
-> Dynamic documentation last reviewed: 2026-08-09. Versions, model names, quotas, endpoints and UI paths must be rechecked against official sources before updates.
+> Dynamic documentation last reviewed: 2026-08-10. Versions, model names, quotas, endpoints and UI paths must be rechecked against official sources before updates.
 
 <p align="center"><strong>Windows 新手从开启虚拟化，到 WSL 2 + Docker + Ollama + Open WebUI 的可复现基础路线。</strong><br>A Windows-first path from virtualization to a local AI chat workstation with WSL 2, Docker, Ollama, and Open WebUI.</p>
 
@@ -25,12 +25,29 @@
 > [!NOTE]
 > 本仓库是独立教育项目，与文中提到的服务商不存在官方合作、赞助或背书关系。试用额度、价格与模型可用性会变化，请以各服务商最新页面为准。详见 [免责声明 / Disclaimer](DISCLAIMER.md)。
 
+## 从这里开始 / Start Here
+
+这不是一组需要读者自己拼接的零散文章，而是一门可以顺序完成的 Windows AI 工作站课程。第一次阅读请从第 00 章开始，并使用每页底部的“上一篇—课程首页—下一篇”继续；不要依赖 GitHub 文件名猜测顺序。
+
+> **完整学习路线：** V0.1 本地工作站 → V0.2 云 API → V0.3 受控 Coding Agent → V0.4 Advanced / Experimental Routing。
+
+[▶ 从第 00 章开始：路线、术语与架构](docs/00-roadmap.md)
+
+| 你的目标 | 建议阅读范围 | 完成标志 |
+| --- | --- | --- |
+| 只搭建本地 AI | 第 00–05 章，再阅读 09、10、12 | Ollama + Open WebUI 本地对话通过 |
+| 增加云模型 | 完成本地路线后继续第 06 章及 Cloud 子课程 | DeepSeek 或百炼/Qwen 至少一条合法 API 路线通过 |
+| 学习 Coding Agent | 继续第 07–12 章及 Agent 子课程 | 隔离 Agent Lab、测试和差异审查通过 |
+| 学习社区路由 | 最后阅读第 13 章及 Routing 子课程 | 理解单 Provider Runtime 证据与未测试边界 |
+
+所有人都可以顺序读完整课程；“选做”只表示不是 V0.1 本地工作站的完成条件，不表示章节可以在不了解前置边界时随意跳读。
+
 ## 版本路线 / Version Roadmap
 
 - ✅ V0.1 — Local AI：Ollama + Open WebUI（`v0.1.0-rc.2`）
 - ✅ V0.2 — Cloud AI：DeepSeek + 百炼/Qwen + Open WebUI（`v0.2.0-rc.1`）
-- ⬜ V0.3 — Coding Agent：Claude Code + Codex + 安全 Agent Lab
-- ⬜ V0.4 — Advanced Routing：Gateway / CCR + 多 Provider + 可观测性
+- 🚧 V0.3 — Coding Agent：实现与 Codex Runtime 已完成，RC 最终评审中
+- ⬜ V0.4 — Advanced Routing：独立 stacked PR 评审中，尚未发布
 
 详细范围、发布门禁与拆分原则见 [ROADMAP.md](ROADMAP.md)。V0.2–V0.4 是同一仓库的后续版本，不会复制四套教程目录。
 
@@ -52,6 +69,12 @@ v0.1.0-rc.1 → v0.1.0-rc.2 → v0.2.0-rc.1（当前）→ v0.2.0（未来稳定
 ```
 
 V0.2 是在 V0.1 基础上的增量升级，包含原有本地工作站路线并增加云 API；不是另一个互不相关的教程。各版本的完整双语说明见 [GitHub Releases](https://github.com/xiaoyao12740/local-ai-workstation-guide/releases)。
+
+## V0.3 Coding Agent / 安全编码代理（评审中）
+
+V0.3 在保留 V0.1 本地工作站与 V0.2 云 API 路线的基础上，增加 Agent 循环、最小权限、审批边界、提示注入防护、Claude Code/Codex 支持分层和无第三方依赖的隔离 Agent Lab。实验只允许在被 Git 忽略的 `.agent-runtime/<agent>` 副本内运行。
+
+V0.3 adds the agent loop, least privilege, approval boundaries, prompt-injection awareness, Claude Code/Codex support layers, and an offline standard-library lab. Start from [V0.3 双语入口 / bilingual entry](docs/07-agent-basics.md). V0.4 CCR routing remains advanced and experimental.
 
 ## V0.2 Cloud AI — `v0.2.0-rc.1`
 

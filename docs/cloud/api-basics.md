@@ -165,3 +165,9 @@ DeepSeek 当前官方错误码页明确列出 400、401、402、422、429、500 
 - [Open WebUI: OpenAI-compatible Providers](https://docs.openwebui.com/getting-started/quick-start/connect-a-provider/starting-with-openai-compatible/)
 
 下一步：[DeepSeek 最小客户端](deepseek.md)。
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：Cloud 子课程目录 / Previous: Cloud module](README.md) | [课程首页 / Course home](../../README.md) | [下一篇：DeepSeek / Next: DeepSeek →](deepseek.md)

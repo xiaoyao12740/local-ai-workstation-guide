@@ -136,3 +136,9 @@ Python 客户端与 Open WebUI 均使用百炼普通按量 Workspace API 的 `qw
 - [DeepSeek model list](https://api-docs.deepseek.com/api/list-models/)
 - [百炼 OpenAI-compatible Chat](https://help.aliyun.com/zh/model-studio/compatibility-of-openai-with-dashscope)
 - [百炼官方模型目录](https://help.aliyun.com/zh/model-studio/models)
+
+---
+
+### 课程导航 / Course navigation
+
+[← 上一篇：百炼/Qwen / Previous: Model Studio and Qwen](bailian.md) | [课程首页 / Course home](../../README.md) | [下一篇：API 安全与费用 / Next: API safety and cost →](api-security.md)
