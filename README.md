@@ -25,6 +25,15 @@
 > [!NOTE]
 > 本仓库是独立教育项目，与文中提到的服务商不存在官方合作、赞助或背书关系。试用额度、价格与模型可用性会变化，请以各服务商最新页面为准。详见 [免责声明 / Disclaimer](DISCLAIMER.md)。
 
+## 版本路线 / Version Roadmap
+
+- ✅ V0.1 — Local AI：Ollama + Open WebUI（`v0.1.0-rc.2`）
+- 🚧 V0.2 — Cloud AI：DeepSeek + 百炼/Qwen + Open WebUI
+- ⬜ V0.3 — Coding Agent：Claude Code + Codex + 安全 Agent Lab
+- ⬜ V0.4 — Advanced Routing：Gateway / CCR + 多 Provider + 可观测性
+
+详细范围、发布门禁与拆分原则见 [ROADMAP.md](ROADMAP.md)。V0.2–V0.4 是同一仓库的后续版本，不会复制四套教程目录。
+
 ## V0.1 最终成果 / What You Will Build
 
 ![Open WebUI running the local Qwen3.5 4B model with a bilingual response](assets/openwebui/openwebui-qwen35-bilingual-chat.png)
