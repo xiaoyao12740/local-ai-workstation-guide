@@ -1,6 +1,6 @@
 # Research Status / 研究状态
 
-> Last verified: 2026-08-09  
+> Last verified: 2026-08-10
 > 本页记录强时效信息的证据状态。正文只采用当前官方资料确认的结论；AI 回答、博客和社区帖子只作为检索线索。
 
 ## 资料可信度优先级
@@ -89,6 +89,8 @@
 来源：[Qwen3.5 tags](https://ollama.com/library/qwen3.5/tags)、[DeepSeek-R1 tags](https://ollama.com/library/deepseek-r1/tags)。
 
 ## 动态维护项 / Recheck Before Updating
+
+- DeepSeek 当前模型目录、旧模型退役状态与 Thinking 默认行为。2026-08-10 Provider 官方目录已使用 V4 模型名，而 Open WebUI 的 DeepSeek 示例仍出现旧 `deepseek-chat` / `deepseek-reasoner`；模型 ID 以 Provider 当前 `/models` 或官方目录为准，第三方客户端示例只作配置线索。
 
 - CCR 最新版本、CLI 命令、数据格式和 Credential 保护实现。
 - Coding Plan 当前支持模型，以及它何时支持最新版 Codex / Responses API。

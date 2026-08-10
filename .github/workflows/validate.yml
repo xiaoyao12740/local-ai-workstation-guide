@@ -32,7 +32,9 @@ jobs:
         run: bash -n scripts/check-wsl.sh
 
       - name: Check Python syntax
-        run: python -m py_compile examples/openai_compatible.py
+        run: |
+          python -m compileall -q examples tests
+          python -m unittest discover -s tests -p "test_*.py" -v
 
       - name: Check Docker Compose syntax
         run: docker compose config --quiet

@@ -9,14 +9,14 @@
 
 | 文件 | 目标 | 关键验收 |
 | --- | --- | --- |
-| `api-basics.md` | Provider、模型、Endpoint、Token、限流与计费 | 能解释网页会员不等于 API |
-| `deepseek.md` | 环境变量、PowerShell/Python 最小调用、错误处理 | 合法 Key 调用成功；401/402/429 可诊断 |
+| [api-basics.md](api-basics.md) | Provider、模型、Endpoint、Token、限流与计费 | 静态实现完成；能解释网页会员不等于 API |
+| [deepseek.md](deepseek.md) | 环境变量、PowerShell/Python 最小调用、错误处理 | 静态实现完成；Runtime NOT RUN |
 | `bailian.md` | 百炼按量付费 Key、地域/业务空间 Endpoint、Qwen 调用 | Key、地域、Workspace 与模型匹配 |
 | `openwebui-provider.md` | Open WebUI 添加 OpenAI-compatible Connection | 本地与云端模型同时可见并可对话 |
 | `api-security.md` | Key 生命周期、最小权限、费用保护与截图规则 | Git/日志/截图中无真实 Key |
 | `troubleshooting.md` | 认证、模型、网络、限流和 Provider UI 故障 | 按层定位，不盲目重装 |
 
-文件在对应功能进入实现阶段时创建，避免先生成空壳教程。
+文件在对应功能进入实现阶段时创建，避免先生成空壳教程。Issue #3–#6 尚未开始。
 
 ## 已确认的动态边界
 
