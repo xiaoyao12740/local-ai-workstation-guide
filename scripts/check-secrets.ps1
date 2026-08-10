@@ -18,6 +18,8 @@ $files = Get-ChildItem -LiteralPath $root -Recurse -File |
     Where-Object {
         $_.FullName -notmatch "[\\/]\.git[\\/]" -and
         $_.FullName -notmatch "[\\/]\.venv[\\/]" -and
+        $_.FullName -notmatch "[\\/]\.agent-runtime[\\/]" -and
+        $_.FullName -notmatch "[\\/]node_modules[\\/]" -and
         $_.FullName -notmatch "[\\/]__pycache__[\\/]"
     }
 
