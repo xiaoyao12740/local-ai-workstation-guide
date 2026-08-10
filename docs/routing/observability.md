@@ -1,5 +1,10 @@
 # 可观测性 / Observability
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.4 · 高级社区路由 / Advanced Community Routing
+> **阅读范围 / Reading range:** 第 13 章 + Routing 专题 / Chapter 13 + Routing section
+> **前置内容 / Prerequisite:** 先完成 V0.3；这是 Advanced / Experimental 路线，不是基础工作站必需项。 / Complete V0.3 first; this Advanced / Experimental route is optional.
+
 ## 中文
 
 验证记录只保留时间、客户端、请求模型、最终 Provider/模型、状态、耗时、Token 数和路由决定。请求/响应正文可能含源码、提示或隐私，默认不截图、不提交。日志先用于回答“请求在哪一层失败”，不用于模型跑分。
@@ -18,6 +23,6 @@ Credential cleanup was separately verified with `/status` and the exact-response
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：路由规则 / Previous: Routing rules](routing-rules.md) | [课程首页 / Course home](../../README.md) | [下一篇：备份与安全 / Next: Backup and security →](backup-security.md)
+[← 上一篇：路由规则 / Previous: Routing rules](routing-rules.md) | [教程首页 / Guide home](../../README.md) | [下一篇：备份与安全 / Next: Backup and security →](backup-security.md)

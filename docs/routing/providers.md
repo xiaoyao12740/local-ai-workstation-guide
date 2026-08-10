@@ -1,5 +1,10 @@
 # Provider 配置 / Providers
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.4 · 高级社区路由 / Advanced Community Routing
+> **阅读范围 / Reading range:** 第 13 章 + Routing 专题 / Chapter 13 + Routing section
+> **前置内容 / Prerequisite:** 先完成 V0.3；这是 Advanced / Experimental 路线，不是基础工作站必需项。 / Complete V0.3 first; this Advanced / Experimental route is optional.
+
 ## 中文
 
 先只配置一个已合法持有的 DeepSeek 或百炼凭据，选择协议、Endpoint 与真实可用 Model ID，执行 UI 的连接检查，再观察一次请求。不要为教程购买新服务，不要同时导入全部 Key。Provider 是否兼容某协议以其当前官方文档和真实检查为准。
@@ -14,6 +19,6 @@ This runtime validated one DeepSeek provider only. A second provider and the swi
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：凭据边界 / Previous: Credential boundaries](credential-boundaries.md) | [课程首页 / Course home](../../README.md) | [下一篇：Agent Profiles / Next: Agent profiles →](agent-profiles.md)
+[← 上一篇：凭据边界 / Previous: Credential boundaries](credential-boundaries.md) | [教程首页 / Guide home](../../README.md) | [下一篇：Agent Profiles / Next: Agent profiles →](agent-profiles.md)

@@ -8,7 +8,7 @@ A Windows-first, beginner-friendly guide to building a private AI workstation wi
 
 ## Start here / 从这里开始
 
-This repository is a sequential course, not a loose collection of articles. Begin with Chapter 00 and use the Previous — Course home — Next links at the bottom of every lesson.
+This repository is a clearly categorized, sequential open-source guide, not a loose collection of articles. Begin with Chapter 00, use the stage/range/prerequisite note at the top of every page, and continue with the Previous — Guide home — Next links at the bottom.
 
 [▶ Start Chapter 00: roadmap, terms, and architecture](docs/00-roadmap.md)
 
@@ -53,24 +53,26 @@ Versions follow `vMAJOR.MINOR.PATCH-rc.N`.
 | --- | --- |
 | `v0.1.0-rc.1` | First public candidate for the V0.1 local workstation |
 | `v0.1.0-rc.2` | A corrected and improved candidate on the same V0.1 line |
-| `v0.2.0-rc.1` | First candidate on the new V0.2 Cloud AI line, so the RC counter starts again at 1; this is the current release |
-| `v0.2.0` | Future stable V0.2 release; not published yet |
+| `v0.2.0-rc.1` | First candidate on the new V0.2 Cloud AI line, so the RC counter starts again at 1 |
+| `v0.3.0-rc.1` | First public candidate for the V0.3 Coding Agent line |
+| `v0.4.0-rc.1` | First public candidate for V0.4 Advanced / Experimental Routing and the latest RC |
+| `v0.4.0` | Future stable V0.4 release; not published yet |
 
 `v0.2.0-rc.1` is newer than `v0.1.0-rc.2`. Compare the base version first (`0.2.0 > 0.1.0`), then compare RC numbers only within the same base version. An isolated `rc.1` or `rc.2` does not determine which release is newer.
 
 ```text
-v0.1.0-rc.1 → v0.1.0-rc.2 → v0.2.0-rc.1 (current) → v0.2.0 (future stable)
+v0.1.0-rc.1 → v0.1.0-rc.2 → v0.2.0-rc.1 → v0.3.0-rc.1 → v0.4.0-rc.1 (current)
 ```
 
 V0.2 is an incremental upgrade over V0.1: it retains the local-workstation path and adds cloud APIs. It is not an unrelated replacement tutorial. See the complete bilingual notes under [GitHub Releases](https://github.com/xiaoyao12740/local-ai-workstation-guide/releases).
 
-## V0.3 Coding Agent — under review
+## V0.3 Coding Agent — `v0.3.0-rc.1`
 
 V0.3 adds an isolated, auditable coding-agent workflow without changing the V0.1 or V0.2 completion paths. It teaches the agent loop, least privilege, approval boundaries, prompt-injection awareness, Claude Code/Codex support layers, and a standard-library Agent Lab.
 
 Runtime work happens only in ignored `.agent-runtime/<agent>` copies. Start with the [bilingual V0.3 entry](docs/07-agent-basics.md). V0.4 community routing remains advanced and experimental.
 
-V0.4 currently proves one loopback route only: **Claude Code → CCR → DeepSeek**. Codex passed static Responses configuration inspection, but Codex-through-CCR runtime and multi-provider switching were not tested. The stacked V0.4 PR remains under final review; it is not merged, tagged, or released.
+V0.4 `v0.4.0-rc.1` proves one loopback route only: **Claude Code → CCR → DeepSeek**. Codex passed static Responses configuration inspection, but Codex-through-CCR runtime and multi-provider switching were not tested. This is a public Advanced / Experimental RC, not evidence that those untested capabilities passed.
 
 ## V0.2 Cloud AI — `v0.2.0-rc.1`
 

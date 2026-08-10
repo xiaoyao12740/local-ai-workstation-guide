@@ -1,5 +1,10 @@
 # 10. 故障排查：一次只修一层
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** 跨版本必读 · 安全、排错与验收 / Cross-version Safety, Troubleshooting, and Acceptance
+> **阅读范围 / Reading range:** 主线第 09、10、12 章 / Main guide Chapters 09, 10, and 12
+> **前置内容 / Prerequisite:** 适用于 V0.1–V0.4；完成所选路线后必须回到这些章节验收。 / Applies to V0.1–V0.4; return here to validate the route you completed.
+
 ## 排查顺序
 
 ```text
@@ -155,6 +160,6 @@ Sensitive values removed: yes
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：安全 / Previous: Security](09-security.md) | [课程首页 / Course home](../README.md) | [下一篇：Agent 实战 / Next: Agent Lab →](11-agent-lab.md)
+[← 上一篇：安全 / Previous: Security](09-security.md) | [教程首页 / Guide home](../README.md) | [下一篇：Agent 实战 / Next: Agent Lab →](11-agent-lab.md)

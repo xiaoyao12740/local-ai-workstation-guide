@@ -27,7 +27,7 @@
 
 ## 从这里开始 / Start Here
 
-这不是一组需要读者自己拼接的零散文章，而是一门可以顺序完成的 Windows AI 工作站课程。第一次阅读请从第 00 章开始，并使用每页底部的“上一篇—课程首页—下一篇”继续；不要依赖 GitHub 文件名猜测顺序。
+这不是一组需要读者自己拼接的零散文章，而是一套分类明确、可以顺序完成的 Windows AI 工作站开源教程。第一次阅读请从第 00 章开始，并使用每页顶部的“教程阶段 / 阅读范围 / 前置内容”和底部的“上一篇—教程首页—下一篇”继续；不要依赖 GitHub 文件名猜测顺序。
 
 > **完整学习路线：** V0.1 本地工作站 → V0.2 云 API → V0.3 受控 Coding Agent → V0.4 Advanced / Experimental Routing。
 
@@ -36,22 +36,22 @@
 | 你的目标 | 建议阅读范围 | 完成标志 |
 | --- | --- | --- |
 | 只搭建本地 AI | 第 00–05 章，再阅读 09、10、12 | Ollama + Open WebUI 本地对话通过 |
-| 增加云模型 | 完成本地路线后继续第 06 章及 Cloud 子课程 | DeepSeek 或百炼/Qwen 至少一条合法 API 路线通过 |
-| 学习 Coding Agent | 继续第 07–12 章及 Agent 子课程 | 隔离 Agent Lab、测试和差异审查通过 |
-| 学习社区路由 | 最后阅读第 13 章及 Routing 子课程 | 理解单 Provider Runtime 证据与未测试边界 |
+| 增加云模型 | 完成本地路线后继续第 06 章及 Cloud 专题 | DeepSeek 或百炼/Qwen 至少一条合法 API 路线通过 |
+| 学习 Coding Agent | 继续第 07–12 章及 Agent 专题 | 隔离 Agent Lab、测试和差异审查通过 |
+| 学习社区路由 | 最后阅读第 13 章及 Routing 专题 | 理解单 Provider Runtime 证据与未测试边界 |
 
-所有人都可以顺序读完整课程；“选做”只表示不是 V0.1 本地工作站的完成条件，不表示章节可以在不了解前置边界时随意跳读。
+所有人都可以顺序读完整教程；“选做”只表示不是 V0.1 本地工作站的完成条件，不表示章节可以在不了解前置边界时随意跳读。
 
 ## 版本路线 / Version Roadmap
 
 - ✅ V0.1 — Local AI：Ollama + Open WebUI（`v0.1.0-rc.2`）
 - ✅ V0.2 — Cloud AI：DeepSeek + 百炼/Qwen + Open WebUI（`v0.2.0-rc.1`）
-- 🚧 V0.3 — Coding Agent：实现与 Codex Runtime 已完成，RC 最终评审中
-- 🚧 V0.4 — Advanced Routing：Claude Code → CCR → DeepSeek 单 Provider Runtime PASS，独立 stacked PR 最终评审中
+- ✅ V0.3 — Coding Agent：隔离 Agent Lab + Codex Runtime（`v0.3.0-rc.1`）
+- ✅ V0.4 — Advanced Routing：Claude Code → CCR → DeepSeek 单 Provider Runtime（`v0.4.0-rc.1`，Advanced / Experimental）
 
 详细范围、发布门禁与拆分原则见 [ROADMAP.md](ROADMAP.md)。V0.2–V0.4 是同一仓库的后续版本，不会复制四套教程目录。
 
-V0.4 当前只证明 **Claude Code → CCR → DeepSeek** 的 loopback 单 Provider 路线；Codex 仅完成 Responses 静态兼容检查，多 Provider 切换 Runtime 未测试。它仍是 Advanced / Experimental，未 Merge、未 Tag、未 Release。
+V0.4 当前只证明 **Claude Code → CCR → DeepSeek** 的 loopback 单 Provider 路线；Codex 仅完成 Responses 静态兼容检查，多 Provider 切换 Runtime 未测试。它是已公开的 Advanced / Experimental RC，不代表上述未测试能力已经通过。
 
 ![V0.4 CCR 单 Provider Runtime：认证清理后的请求全部返回 HTTP 200](assets/routing/ccr-auth-clean-runtime-log.png)
 
@@ -63,18 +63,20 @@ V0.4 当前只证明 **Claude Code → CCR → DeepSeek** 的 loopback 单 Provi
 | --- | --- |
 | `v0.1.0-rc.1` | V0.1 本地工作站的第一个公开候选版 |
 | `v0.1.0-rc.2` | 仍属于 V0.1，是对 `rc.1` 的修正与完善 |
-| `v0.2.0-rc.1` | 进入新的 V0.2 Cloud AI 功能线，因此候选序号重新从 1 开始；这是当前版本 |
-| `v0.2.0` | 将来的 V0.2 正式稳定版，目前尚未发布 |
+| `v0.2.0-rc.1` | 进入新的 V0.2 Cloud AI 功能线，因此候选序号重新从 1 开始 |
+| `v0.3.0-rc.1` | V0.3 Coding Agent 功能线的第一个公开候选版 |
+| `v0.4.0-rc.1` | V0.4 Advanced / Experimental Routing 功能线的第一个公开候选版，也是当前最新 RC |
+| `v0.4.0` | 将来的 V0.4 正式稳定版，目前尚未发布 |
 
 `v0.2.0-rc.1` 比 `v0.1.0-rc.2` 新：先比较基础版本 `0.2.0 > 0.1.0`，再看同一基础版本内部的 RC 序号。不能脱离基础版本，只拿 `rc.1` 和 `rc.2` 判断新旧。
 
 ```text
-v0.1.0-rc.1 → v0.1.0-rc.2 → v0.2.0-rc.1（当前）→ v0.2.0（未来稳定版）
+v0.1.0-rc.1 → v0.1.0-rc.2 → v0.2.0-rc.1 → v0.3.0-rc.1 → v0.4.0-rc.1（当前）
 ```
 
 V0.2 是在 V0.1 基础上的增量升级，包含原有本地工作站路线并增加云 API；不是另一个互不相关的教程。各版本的完整双语说明见 [GitHub Releases](https://github.com/xiaoyao12740/local-ai-workstation-guide/releases)。
 
-## V0.3 Coding Agent / 安全编码代理（评审中）
+## V0.3 Coding Agent / 安全编码代理 — `v0.3.0-rc.1`
 
 V0.3 在保留 V0.1 本地工作站与 V0.2 云 API 路线的基础上，增加 Agent 循环、最小权限、审批边界、提示注入防护、Claude Code/Codex 支持分层和无第三方依赖的隔离 Agent Lab。实验只允许在被 Git 忽略的 `.agent-runtime/<agent>` 副本内运行。
 

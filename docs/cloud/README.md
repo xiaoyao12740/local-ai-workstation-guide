@@ -1,6 +1,11 @@
 # V0.2 Cloud AI 工作站
 
-> Last verified: 2026-08-10  
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.2 · 云端模型接入 / Cloud Model Integration
+> **阅读范围 / Reading range:** 第 06 章 + Cloud 专题 / Chapter 06 + Cloud section
+> **前置内容 / Prerequisite:** 建议先完成 V0.1；云端调用会产生额度或费用。 / Complete V0.1 first; cloud calls may consume quota or incur cost.
+
+> Last verified: 2026-08-10
 > Status: V0.2 RC preparation — DeepSeek、百炼/Qwen 与 Open WebUI Runtime PASS
 
 本目录承载 V0.2 的详细内容；[06-cloud-api.md](../06-cloud-api.md) 继续作为入口页。V0.2 只讨论通用模型 API 与 Open WebUI Provider，不包含 Coding Agent 或 CCR。
@@ -56,6 +61,6 @@ Issue #1–#4 已完成；安全、费用、故障排查与 RC 门禁由 Issue #
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：V0.2 云 API 总览 / Previous: Cloud overview](../06-cloud-api.md) | [课程首页 / Course home](../../README.md) | [下一篇：API 基础 / Next: API basics →](api-basics.md)
+[← 上一篇：V0.2 云 API 总览 / Previous: Cloud overview](../06-cloud-api.md) | [教程首页 / Guide home](../../README.md) | [下一篇：API 基础 / Next: API basics →](api-basics.md)

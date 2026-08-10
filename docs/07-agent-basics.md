@@ -1,5 +1,10 @@
 # V0.3 Coding Agent 基础 / Coding Agent Foundations
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.3 · 受控 Coding Agent / Controlled Coding Agents
+> **阅读范围 / Reading range:** 第 07–08、11 章 + Agent 专题 / Chapters 07–08 and 11 + Agent section
+> **前置内容 / Prerequisite:** 先理解 V0.2 的 API 与凭据边界；所有实验只在隔离 Agent Lab 中运行。 / Understand V0.2 API and credential boundaries; run experiments only in the isolated Agent Lab.
+
 [中文](#中文) | [English](#english) · Last verified: 2026-08-10
 
 ## 中文
@@ -26,6 +31,6 @@ Read the [mental model](agents/agent-mental-model.md) and [permission guide](age
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：Cloud 故障排查 / Previous: Cloud troubleshooting](cloud/troubleshooting.md) | [课程首页 / Course home](../README.md) | [下一篇：V0.3 Agent 子课程 / Next: Agent module →](agents/README.md)
+[← 上一篇：Cloud 故障排查 / Previous: Cloud troubleshooting](cloud/troubleshooting.md) | [教程首页 / Guide home](../README.md) | [下一篇：V0.3 Agent 专题 / Next: Agent module →](agents/README.md)

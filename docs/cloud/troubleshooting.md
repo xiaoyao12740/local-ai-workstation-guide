@@ -1,5 +1,10 @@
 # 云 API 分层故障排查
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.2 · 云端模型接入 / Cloud Model Integration
+> **阅读范围 / Reading range:** 第 06 章 + Cloud 专题 / Chapter 06 + Cloud section
+> **前置内容 / Prerequisite:** 建议先完成 V0.1；云端调用会产生额度或费用。 / Complete V0.1 first; cloud calls may consume quota or incur cost.
+
 > Last verified: 2026-08-10
 > 原则：从配置向 Provider 逐层定位；不打印凭据，不盲目重装，不删除数据卷。
 
@@ -70,6 +75,6 @@ http://host.docker.internal:11434
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：API 安全与费用 / Previous: API safety and cost](api-security.md) | [课程首页 / Course home](../../README.md) | [下一篇：V0.3 Coding Agent / Next: Coding agents →](../07-agent-basics.md)
+[← 上一篇：API 安全与费用 / Previous: API safety and cost](api-security.md) | [教程首页 / Guide home](../../README.md) | [下一篇：V0.3 Coding Agent / Next: Coding agents →](../07-agent-basics.md)

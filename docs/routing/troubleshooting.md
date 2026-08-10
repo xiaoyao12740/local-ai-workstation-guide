@@ -1,5 +1,10 @@
 # 路由排错 / Routing Troubleshooting
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.4 · 高级社区路由 / Advanced Community Routing
+> **阅读范围 / Reading range:** 第 13 章 + Routing 专题 / Chapter 13 + Routing section
+> **前置内容 / Prerequisite:** 先完成 V0.3；这是 Advanced / Experimental 路线，不是基础工作站必需项。 / Complete V0.3 first; this Advanced / Experimental route is optional.
+
 ## 中文
 
 严格按链路：Agent → Profile → Client Key → Gateway 监听 → 路由规则 → 上游 Key → 协议转换 → Model ID → Provider 状态。`401/403` 先看哪一跳拒绝；`404` 看 Base URL/路径；模型错误看发现列表；无日志说明请求可能没到 Gateway；有入口无上游则看规则和凭据。
@@ -21,6 +26,6 @@ If Claude Code reports both `apiKeyHelper` and `ANTHROPIC_API_KEY`, keep the CCR
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：备份与安全 / Previous: Backup and security](backup-security.md) | [课程首页 / Course home](../../README.md) | [下一篇：截图验收 / Next: Screenshot acceptance →](screenshots.md)
+[← 上一篇：备份与安全 / Previous: Backup and security](backup-security.md) | [教程首页 / Guide home](../../README.md) | [下一篇：截图验收 / Next: Screenshot acceptance →](screenshots.md)

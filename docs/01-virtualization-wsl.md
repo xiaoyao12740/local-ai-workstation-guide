@@ -1,5 +1,10 @@
 # 01. 开启虚拟化与安装 WSL 2
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.1 · 本地 AI 工作站 / Local AI Workstation
+> **阅读范围 / Reading range:** 主线第 00–05 章 / Main guide Chapters 00–05
+> **前置内容 / Prerequisite:** 按主线顺序阅读；第 00 章无需前置知识。 / Follow the main sequence; Chapter 00 has no prerequisite.
+
 ## 本章目标与前置条件
 
 从一台尚未安装 WSL 的 Windows 电脑开始，完成虚拟化检查、Ubuntu 安装和 WSL 2 验收。本章只需要 Windows 管理员权限和网络连接，不要求预先安装 Git、Python、Docker 或 Ollama。
@@ -76,6 +81,6 @@ WSL、Windows 和 Docker Desktop 之间并非永远共享同一个 `localhost` �
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：路线与架构 / Previous: Roadmap](00-roadmap.md) | [课程首页 / Course home](../README.md) | [下一篇：硬件与模型选择 / Next: Hardware and models →](02-gpu-model-selection.md)
+[← 上一篇：路线与架构 / Previous: Roadmap](00-roadmap.md) | [教程首页 / Guide home](../README.md) | [下一篇：硬件与模型选择 / Next: Hardware and models →](02-gpu-model-selection.md)

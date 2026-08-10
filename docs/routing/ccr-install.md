@@ -1,5 +1,10 @@
 # 安装 CCR / Install CCR
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.4 · 高级社区路由 / Advanced Community Routing
+> **阅读范围 / Reading range:** 第 13 章 + Routing 专题 / Chapter 13 + Routing section
+> **前置内容 / Prerequisite:** 先完成 V0.3；这是 Advanced / Experimental 路线，不是基础工作站必需项。 / Complete V0.3 first; this Advanced / Experimental route is optional.
+
 Last verified: 2026-08-10 (CCR Windows Desktop 3.0.20; npm package 3.0.20, Node.js `>=22`)
 
 ## 中文
@@ -30,6 +35,6 @@ Official sources: [CCR npm package](https://www.npmjs.com/package/@musistudio/cl
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：Gateway 基础 / Previous: Gateway basics](gateway-basics.md) | [课程首页 / Course home](../../README.md) | [下一篇：凭据边界 / Next: Credential boundaries →](credential-boundaries.md)
+[← 上一篇：Gateway 基础 / Previous: Gateway basics](gateway-basics.md) | [教程首页 / Guide home](../../README.md) | [下一篇：凭据边界 / Next: Credential boundaries →](credential-boundaries.md)

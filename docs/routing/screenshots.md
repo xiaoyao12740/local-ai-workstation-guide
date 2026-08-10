@@ -1,5 +1,10 @@
 # 截图验收清单 / Screenshot Acceptance List
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.4 · 高级社区路由 / Advanced Community Routing
+> **阅读范围 / Reading range:** 第 13 章 + Routing 专题 / Chapter 13 + Routing section
+> **前置内容 / Prerequisite:** 先完成 V0.3；这是 Advanced / Experimental 路线，不是基础工作站必需项。 / Complete V0.3 first; this Advanced / Experimental route is optional.
+
 以下截图由维护者在真实 Runtime 完成后提供。地址栏、Token、Key、Credential 名称、账户、邮箱、余额、完整本机路径和请求/响应正文必须隐藏。
 
 The maintainer captures these only after real runtime. Hide the address bar, tokens, keys, credential labels, account identity, balance, full local paths, and request/response bodies.
@@ -18,6 +23,6 @@ Use at most screenshot 1 in README. Place detailed evidence under `assets/routin
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：Routing 故障排查 / Previous: Routing troubleshooting](troubleshooting.md) | [课程首页 / Course home — 完成完整路线](../../README.md)
+[← 上一篇：Routing 故障排查 / Previous: Routing troubleshooting](troubleshooting.md) | [教程首页 / Guide home — 完成完整路线](../../README.md)

@@ -1,5 +1,10 @@
 # 03. Docker 基础与 WSL 2 后端
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.1 · 本地 AI 工作站 / Local AI Workstation
+> **阅读范围 / Reading range:** 主线第 00–05 章 / Main guide Chapters 00–05
+> **前置内容 / Prerequisite:** 按主线顺序阅读；第 00 章无需前置知识。 / Follow the main sequence; Chapter 00 has no prerequisite.
+
 ## 本章目标
 
 - 理解 Image、Container、Volume、Port 和 Network。
@@ -120,6 +125,6 @@ docker compose down
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：硬件与模型选择 / Previous: Hardware and models](02-gpu-model-selection.md) | [课程首页 / Course home](../README.md) | [下一篇：Ollama / Next: Ollama →](04-ollama.md)
+[← 上一篇：硬件与模型选择 / Previous: Hardware and models](02-gpu-model-selection.md) | [教程首页 / Guide home](../README.md) | [下一篇：Ollama / Next: Ollama →](04-ollama.md)

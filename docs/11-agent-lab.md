@@ -1,5 +1,10 @@
 # 11. Agent 实战：hello-agent
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.3 · 受控 Coding Agent / Controlled Coding Agents
+> **阅读范围 / Reading range:** 第 07–08、11 章 + Agent 专题 / Chapters 07–08 and 11 + Agent section
+> **前置内容 / Prerequisite:** 先理解 V0.2 的 API 与凭据边界；所有实验只在隔离 Agent Lab 中运行。 / Understand V0.2 API and credential boundaries; run experiments only in the isolated Agent Lab.
+
 ## 本章目标
 
 在一个无真实凭据、无重要文件、可随时删除的独立仓库中，让 Coding Agent 完成：读取规范、创建代码、运行测试、修复错误、展示差异，并在人工确认后提交。
@@ -118,6 +123,6 @@ git commit -m "feat: complete hello-agent exercise"
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：故障排查 / Previous: Troubleshooting](10-troubleshooting.md) | [课程首页 / Course home](../README.md) | [下一篇：最终验收 / Next: Acceptance →](12-acceptance.md)
+[← 上一篇：故障排查 / Previous: Troubleshooting](10-troubleshooting.md) | [教程首页 / Guide home](../README.md) | [下一篇：最终验收 / Next: Acceptance →](12-acceptance.md)

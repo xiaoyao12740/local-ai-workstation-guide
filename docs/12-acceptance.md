@@ -1,5 +1,10 @@
 # 12. 最终验收：证明工作站真的可用
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** 跨版本必读 · 安全、排错与验收 / Cross-version Safety, Troubleshooting, and Acceptance
+> **阅读范围 / Reading range:** 主线第 09、10、12 章 / Main guide Chapters 09, 10, and 12
+> **前置内容 / Prerequisite:** 适用于 V0.1–V0.4；完成所选路线后必须回到这些章节验收。 / Applies to V0.1–V0.4; return here to validate the route you completed.
+
 最终目标不是“所有软件都安装过”，而是每层都有可复现证据。
 
 ## 1. Windows 与 WSL
@@ -110,6 +115,6 @@ git diff --cached
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：Agent 实战 / Previous: Agent Lab](11-agent-lab.md) | [课程首页 / Course home](../README.md) | [下一篇：V0.4 Advanced Routing / Next: Advanced routing →](13-routing.md)
+[← 上一篇：Agent 实战 / Previous: Agent Lab](11-agent-lab.md) | [教程首页 / Guide home](../README.md) | [下一篇：V0.4 Advanced Routing / Next: Advanced routing →](13-routing.md)

@@ -1,6 +1,11 @@
 # 云 API 基础：先理解账单与信任边界
 
-> Last verified: 2026-08-10  
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.2 · 云端模型接入 / Cloud Model Integration
+> **阅读范围 / Reading range:** 第 06 章 + Cloud 专题 / Chapter 06 + Cloud section
+> **前置内容 / Prerequisite:** 建议先完成 V0.1；云端调用会产生额度或费用。 / Complete V0.1 first; cloud calls may consume quota or incur cost.
+
+> Last verified: 2026-08-10
 > V0.2 Implementation Phase 1 · 对应 Issue #1
 
 ## 本章目标
@@ -168,6 +173,6 @@ DeepSeek 当前官方错误码页明确列出 400、401、402、422、429、500 
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：Cloud 子课程目录 / Previous: Cloud module](README.md) | [课程首页 / Course home](../../README.md) | [下一篇：DeepSeek / Next: DeepSeek →](deepseek.md)
+[← 上一篇：Cloud 专题目录 / Previous: Cloud module](README.md) | [教程首页 / Guide home](../../README.md) | [下一篇：DeepSeek / Next: DeepSeek →](deepseek.md)

@@ -1,6 +1,11 @@
 # 百炼 / Model Studio 最小客户端：静态与真实调用
 
-> Last verified: 2026-08-10  
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.2 · 云端模型接入 / Cloud Model Integration
+> **阅读范围 / Reading range:** 第 06 章 + Cloud 专题 / Chapter 06 + Cloud section
+> **前置内容 / Prerequisite:** 建议先完成 V0.1；云端调用会产生额度或费用。 / Complete V0.1 first; cloud calls may consume quota or incur cost.
+
+> Last verified: 2026-08-10
 > Runtime status: PASS — 2026-08-10，`qwen3.7-plus`，HTTP 200，`CLOUD_API_OK`
 
 真实调用使用脱敏 Workspace 域名 `<workspace>.cn-beijing.maas.aliyuncs.com`。仓库不记录真实 Workspace ID、API Key、余额或账户 ID。
@@ -86,6 +91,6 @@ HTTP 错误只给脱敏分类。百炼的余额/额度、Workspace、地域与 K
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：DeepSeek / Previous: DeepSeek](deepseek.md) | [课程首页 / Course home](../../README.md) | [下一篇：Open WebUI 云 Provider / Next: Open WebUI cloud providers →](openwebui-provider.md)
+[← 上一篇：DeepSeek / Previous: DeepSeek](deepseek.md) | [教程首页 / Guide home](../../README.md) | [下一篇：Open WebUI 云 Provider / Next: Open WebUI cloud providers →](openwebui-provider.md)

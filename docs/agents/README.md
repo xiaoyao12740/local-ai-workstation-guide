@@ -1,5 +1,10 @@
 # V0.3 Agent Guide / Agent 教程导航
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.3 · 受控 Coding Agent / Controlled Coding Agents
+> **阅读范围 / Reading range:** 第 07–08、11 章 + Agent 专题 / Chapters 07–08 and 11 + Agent section
+> **前置内容 / Prerequisite:** 先理解 V0.2 的 API 与凭据边界；所有实验只在隔离 Agent Lab 中运行。 / Understand V0.2 API and credential boundaries; run experiments only in the isolated Agent Lab.
+
 [中文](#中文) | [English](#english) · Last verified: 2026-08-10
 
 ## 中文
@@ -18,6 +23,6 @@ Follow the same numbered links above: mental model, permissions, Claude Code, Co
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：V0.3 Agent 总览 / Previous: Agent overview](../07-agent-basics.md) | [课程首页 / Course home](../../README.md) | [下一篇：Agent 心智模型 / Next: Agent mental model →](agent-mental-model.md)
+[← 上一篇：V0.3 Agent 总览 / Previous: Agent overview](../07-agent-basics.md) | [教程首页 / Guide home](../../README.md) | [下一篇：Agent 心智模型 / Next: Agent mental model →](agent-mental-model.md)

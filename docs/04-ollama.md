@@ -1,6 +1,11 @@
 # 04. Ollama：本地模型服务
 
-> Last verified: 2026-08-09  
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.1 · 本地 AI 工作站 / Local AI Workstation
+> **阅读范围 / Reading range:** 主线第 00–05 章 / Main guide Chapters 00–05
+> **前置内容 / Prerequisite:** 按主线顺序阅读；第 00 章无需前置知识。 / Follow the main sequence; Chapter 00 has no prerequisite.
+
+> Last verified: 2026-08-09
 > 模型标签和运行时支持会变化，下载前请复查官方模型库。
 
 ## 本章目标
@@ -117,6 +122,6 @@ Modelfile 可以基于已有模型设置 System Prompt、参数或模板。初�
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：Docker / Previous: Docker](03-docker.md) | [课程首页 / Course home](../README.md) | [下一篇：Open WebUI / Next: Open WebUI →](05-openwebui.md)
+[← 上一篇：Docker / Previous: Docker](03-docker.md) | [教程首页 / Guide home](../README.md) | [下一篇：Open WebUI / Next: Open WebUI →](05-openwebui.md)

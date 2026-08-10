@@ -1,6 +1,11 @@
 # 05. 用 Docker 部署 Open WebUI
 
-> Last verified: 2026-08-09  
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.1 · 本地 AI 工作站 / Local AI Workstation
+> **阅读范围 / Reading range:** 主线第 00–05 章 / Main guide Chapters 00–05
+> **前置内容 / Prerequisite:** 按主线顺序阅读；第 00 章无需前置知识。 / Follow the main sequence; Chapter 00 has no prerequisite.
+
+> Last verified: 2026-08-09
 > 核验时最新 GitHub Release 为 v0.11.0；仓库未声称已在本机完整验证该版本。
 
 ## 本章目标
@@ -141,6 +146,6 @@ Invoke-WebRequest http://localhost:3000/health
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：Ollama / Previous: Ollama](04-ollama.md) | [课程首页 / Course home](../README.md) | [下一篇：V0.2 云 API / Next: Cloud APIs →](06-cloud-api.md)
+[← 上一篇：Ollama / Previous: Ollama](04-ollama.md) | [教程首页 / Guide home](../README.md) | [下一篇：V0.2 云 API / Next: Cloud APIs →](06-cloud-api.md)

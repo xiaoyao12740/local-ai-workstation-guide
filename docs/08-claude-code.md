@@ -1,6 +1,11 @@
 # 08. Claude Code、Codex 与兼容路由
 
-> Last verified: 2026-08-09  
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.3 · 受控 Coding Agent / Controlled Coding Agents
+> **阅读范围 / Reading range:** 第 07–08、11 章 + Agent 专题 / Chapters 07–08 and 11 + Agent section
+> **前置内容 / Prerequisite:** 先理解 V0.2 的 API 与凭据边界；所有实验只在隔离 Agent Lab 中运行。 / Understand V0.2 API and credential boundaries; run experiments only in the isolated Agent Lab.
+
+> Last verified: 2026-08-09
 > Claude Code、Codex、Gateway 与 CCR 更新较快，执行命令前复查官方文档。
 
 ## 本章目标
@@ -202,6 +207,6 @@ Coding Plan → Chat/Completions → 仅按百炼当期兼容说明评估旧版 
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：Agent 故障排查 / Previous: Agent troubleshooting](agents/troubleshooting.md) | [课程首页 / Course home](../README.md) | [下一篇：安全 / Next: Security →](09-security.md)
+[← 上一篇：Agent 故障排查 / Previous: Agent troubleshooting](agents/troubleshooting.md) | [教程首页 / Guide home](../README.md) | [下一篇：安全 / Next: Security →](09-security.md)

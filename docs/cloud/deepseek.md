@@ -1,6 +1,11 @@
 # DeepSeek 最小客户端：静态与真实调用
 
-> Last verified: 2026-08-10  
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.2 · 云端模型接入 / Cloud Model Integration
+> **阅读范围 / Reading range:** 第 06 章 + Cloud 专题 / Chapter 06 + Cloud section
+> **前置内容 / Prerequisite:** 建议先完成 V0.1；云端调用会产生额度或费用。 / Complete V0.1 first; cloud calls may consume quota or incur cost.
+
+> Last verified: 2026-08-10
 > Runtime status: PASS — 2026-08-10，`deepseek-v4-flash`，HTTP 200，`CLOUD_API_OK`
 
 静态检查覆盖配置、代码结构、Thinking 策略、错误分类与缺 Key 安全退出；维护者随后以当前 Shell 隐藏输入的 Key 完成一次真实调用。仓库没有记录 Key、余额、账户 ID 或完整响应头。
@@ -79,6 +84,6 @@ Remove-Item Env:DEEPSEEK_MODEL -ErrorAction SilentlyContinue
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：API 基础 / Previous: API basics](api-basics.md) | [课程首页 / Course home](../../README.md) | [下一篇：百炼/Qwen / Next: Model Studio and Qwen →](bailian.md)
+[← 上一篇：API 基础 / Previous: API basics](api-basics.md) | [教程首页 / Guide home](../../README.md) | [下一篇：百炼/Qwen / Next: Model Studio and Qwen →](bailian.md)

@@ -1,5 +1,10 @@
 # 06. V0.2 云端模型 API 入口
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.2 · 云端模型接入 / Cloud Model Integration
+> **阅读范围 / Reading range:** 第 06 章 + Cloud 专题 / Chapter 06 + Cloud section
+> **前置内容 / Prerequisite:** 建议先完成 V0.1；云端调用会产生额度或费用。 / Complete V0.1 first; cloud calls may consume quota or incur cost.
+
 > Last verified: 2026-08-10
 > 额度、Endpoint、模型和计划规则属于动态信息，使用前必须复查控制台。
 
@@ -211,6 +216,6 @@ OpenAI 示例要求显式设置 `MODEL`。原因是模型可用性会随项目�
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：Open WebUI / Previous: Open WebUI](05-openwebui.md) | [课程首页 / Course home](../README.md) | [下一篇：V0.2 Cloud 子课程 / Next: Cloud module →](cloud/README.md)
+[← 上一篇：Open WebUI / Previous: Open WebUI](05-openwebui.md) | [教程首页 / Guide home](../README.md) | [下一篇：V0.2 Cloud 专题 / Next: Cloud module →](cloud/README.md)

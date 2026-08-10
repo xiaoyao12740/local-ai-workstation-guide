@@ -1,5 +1,10 @@
 # 云 API 安全与费用保护
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.2 · 云端模型接入 / Cloud Model Integration
+> **阅读范围 / Reading range:** 第 06 章 + Cloud 专题 / Chapter 06 + Cloud section
+> **前置内容 / Prerequisite:** 建议先完成 V0.1；云端调用会产生额度或费用。 / Complete V0.1 first; cloud calls may consume quota or incur cost.
+
 > Last verified: 2026-08-10
 > Scope: V0.2 — DeepSeek 与阿里云百炼按量 API；OpenAI/Claude 仅作边界说明
 
@@ -80,6 +85,6 @@ PowerShell 临时环境变量不等于 Open WebUI Connection。管理员在网�
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：Open WebUI 云 Provider / Previous: Open WebUI cloud providers](openwebui-provider.md) | [课程首页 / Course home](../../README.md) | [下一篇：Cloud 故障排查 / Next: Cloud troubleshooting →](troubleshooting.md)
+[← 上一篇：Open WebUI 云 Provider / Previous: Open WebUI cloud providers](openwebui-provider.md) | [教程首页 / Guide home](../../README.md) | [下一篇：Cloud 故障排查 / Next: Cloud troubleshooting →](troubleshooting.md)

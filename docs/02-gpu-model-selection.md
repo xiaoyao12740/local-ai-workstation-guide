@@ -1,6 +1,11 @@
 # 02. 硬件、显存与本地模型选择
 
-> Last verified: 2026-08-09  
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.1 · 本地 AI 工作站 / Local AI Workstation
+> **阅读范围 / Reading range:** 主线第 00–05 章 / Main guide Chapters 00–05
+> **前置内容 / Prerequisite:** 按主线顺序阅读；第 00 章无需前置知识。 / Follow the main sequence; Chapter 00 has no prerequisite.
+
+> Last verified: 2026-08-09
 > 模型标签、文件体积和运行时支持会变化，请在下载前复查 Ollama 官方模型库与文档。
 
 ## 本章目标
@@ -137,6 +142,6 @@ Docker / Open WebUI / Agent：统一工程体验
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：虚拟化与 WSL 2 / Previous: Virtualization](01-virtualization-wsl.md) | [课程首页 / Course home](../README.md) | [下一篇：Docker / Next: Docker →](03-docker.md)
+[← 上一篇：虚拟化与 WSL 2 / Previous: Virtualization](01-virtualization-wsl.md) | [教程首页 / Guide home](../README.md) | [下一篇：Docker / Next: Docker →](03-docker.md)

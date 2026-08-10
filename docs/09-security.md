@@ -1,5 +1,10 @@
 # 09. 令牌、网络与 Agent 安全
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** 跨版本必读 · 安全、排错与验收 / Cross-version Safety, Troubleshooting, and Acceptance
+> **阅读范围 / Reading range:** 主线第 09、10、12 章 / Main guide Chapters 09, 10, and 12
+> **前置内容 / Prerequisite:** 适用于 V0.1–V0.4；完成所选路线后必须回到这些章节验收。 / Applies to V0.1–V0.4; return here to validate the route you completed.
+
 ## 本章目标
 
 - 防止 API Key、Cookie、聊天记录和个人文件进入 Git。
@@ -123,6 +128,6 @@ Agent 读取的 README、Issue、网页、依赖说明和代码注释都可能�
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：Agent 与兼容路由 / Previous: Agents and compatibility](08-claude-code.md) | [课程首页 / Course home](../README.md) | [下一篇：故障排查 / Next: Troubleshooting →](10-troubleshooting.md)
+[← 上一篇：Agent 与兼容路由 / Previous: Agents and compatibility](08-claude-code.md) | [教程首页 / Guide home](../README.md) | [下一篇：故障排查 / Next: Troubleshooting →](10-troubleshooting.md)

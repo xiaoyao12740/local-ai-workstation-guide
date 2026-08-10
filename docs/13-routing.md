@@ -1,5 +1,10 @@
 # 13. V0.4 路由 / V0.4 Routing
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.4 · 高级社区路由 / Advanced Community Routing
+> **阅读范围 / Reading range:** 第 13 章 + Routing 专题 / Chapter 13 + Routing section
+> **前置内容 / Prerequisite:** 先完成 V0.3；这是 Advanced / Experimental 路线，不是基础工作站必需项。 / Complete V0.3 first; this Advanced / Experimental route is optional.
+
 [中文](#中文) | [English](#english) · Dynamic information last verified: 2026-08-10
 
 ## 中文
@@ -24,6 +29,6 @@ V0.4 is an advanced community experiment, not a prerequisite for the local works
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：最终验收 / Previous: Acceptance](12-acceptance.md) | [课程首页 / Course home](../README.md) | [下一篇：V0.4 Routing 子课程 / Next: Routing module →](routing/README.md)
+[← 上一篇：最终验收 / Previous: Acceptance](12-acceptance.md) | [教程首页 / Guide home](../README.md) | [下一篇：V0.4 Routing 专题 / Next: Routing module →](routing/README.md)

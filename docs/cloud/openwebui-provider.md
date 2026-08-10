@@ -1,5 +1,10 @@
 # Open WebUI 云 Provider：持久化凭据前先过安全门
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.2 · 云端模型接入 / Cloud Model Integration
+> **阅读范围 / Reading range:** 第 06 章 + Cloud 专题 / Chapter 06 + Cloud section
+> **前置内容 / Prerequisite:** 建议先完成 V0.1；云端调用会产生额度或费用。 / Complete V0.1 first; cloud calls may consume quota or incur cost.
+
 > Last verified: 2026-08-10
 > Runtime status: DEEPSEEK / QWEN PROVIDER UI VALIDATION PASS
 
@@ -139,6 +144,6 @@ Python 客户端与 Open WebUI 均使用百炼普通按量 Workspace API 的 `qw
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 上一篇：百炼/Qwen / Previous: Model Studio and Qwen](bailian.md) | [课程首页 / Course home](../../README.md) | [下一篇：API 安全与费用 / Next: API safety and cost →](api-security.md)
+[← 上一篇：百炼/Qwen / Previous: Model Studio and Qwen](bailian.md) | [教程首页 / Guide home](../../README.md) | [下一篇：API 安全与费用 / Next: API safety and cost →](api-security.md)

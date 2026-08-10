@@ -1,8 +1,8 @@
 # 项目路线图 / Project Roadmap
 
-> Last verified: 2026-08-10  
-> 当前公开版本：`v0.2.0-rc.1`
-> 当前开发阶段：V0.3 实现完成、Codex Runtime PASS；V0.4 单 Provider Runtime PASS，独立 stacked PR 最终评审中
+> Last verified: 2026-08-10
+> 当前公开版本：`v0.4.0-rc.1`
+> 当前阶段：V0.1–V0.4 均已发布 RC；Clean Windows / 独立新手黑盒验证仍是稳定版前置门禁
 
 本项目使用一个仓库和连续的 Git Tag / GitHub Release 记录演进，不复制多套版本目录。V0.1 必须始终可以在不申请云 API、不安装 Coding Agent 和 CCR 的情况下独立完成。
 
@@ -11,7 +11,7 @@
 本项目采用 `vMAJOR.MINOR.PATCH-rc.N`。基础版本决定功能阶段，`rc.N` 只表示该基础版本发布前的第 N 个候选版：
 
 ```text
-v0.1.0-rc.1 → v0.1.0-rc.2 → v0.2.0-rc.1 → v0.2.0
+v0.1.0-rc.1 → v0.1.0-rc.2 → v0.2.0-rc.1 → v0.3.0-rc.1 → v0.4.0-rc.1
 ```
 
 - `v0.1.0-rc.1` 与 `v0.1.0-rc.2` 都属于 V0.1；后者是同一功能线的第二次候选。
@@ -59,7 +59,7 @@ V0.1 → DeepSeek API → Alibaba Cloud Model Studio / Qwen API
 
 ## V0.3 — Coding Agent Workstation
 
-**状态：** 实现完成、Codex Runtime PASS，等待 RC 最终评审；尚未 Merge、Tag 或 Release。
+**状态：** `v0.3.0-rc.1` 已公开；Codex Runtime、隔离 Agent Lab、作用域检查与人工差异复核 PASS。
 
 ```text
 V0.2 → Claude Code → Codex → Permission Boundary → Agent Lab
@@ -69,7 +69,7 @@ V0.2 → Claude Code → Codex → Permission Boundary → Agent Lab
 
 ## V0.4 — Multi-Provider Agent Workstation
 
-**状态：** Claude Code → CCR → DeepSeek 单 Provider Runtime PASS，独立 stacked PR 最终评审中；定位为 Advanced / Experimental，尚未发布。Codex 仅静态 Responses 兼容 PASS，多 Provider 切换 Runtime 未测试。
+**状态：** `v0.4.0-rc.1` 已公开，定位为 Advanced / Experimental。Claude Code → CCR → DeepSeek 单 Provider Runtime PASS；Codex 仅静态 Responses 兼容 PASS，多 Provider 切换 Runtime 未测试。
 
 ```text
 Providers → Gateway / CCR → Routing → Agents → Observability

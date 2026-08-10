@@ -1,5 +1,10 @@
 # 00. 路线、术语与架构 / Roadmap, Terms, and Architecture
 
+> [!NOTE]
+> **教程阶段 / Guide stage:** V0.1 · 本地 AI 工作站 / Local AI Workstation
+> **阅读范围 / Reading range:** 主线第 00–05 章 / Main guide Chapters 00–05
+> **前置内容 / Prerequisite:** 按主线顺序阅读；第 00 章无需前置知识。 / Follow the main sequence; Chapter 00 has no prerequisite.
+
 ## 先理解每个组件
 
 | 组件 | 负责什么 | 不负责什么 |
@@ -49,6 +54,6 @@ Treat the workstation as layered infrastructure. Verify one layer at a time and 
 
 ---
 
-### 课程导航 / Course navigation
+### 教程导航 / Guide navigation
 
-[← 课程首页 / Course home](../README.md) | [下一篇：开启虚拟化与 WSL 2 / Next: Virtualization and WSL 2 →](01-virtualization-wsl.md)
+[← 教程首页 / Guide home](../README.md) | [下一篇：开启虚拟化与 WSL 2 / Next: Virtualization and WSL 2 →](01-virtualization-wsl.md)
